@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +50,107 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="View\Userrr\NhanVien\CaTruc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\Userrr\NhanVien\CaTruc.Designer.cs">
+      <DependentUpon>CaTruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\PhongDaoTao\PhanCaTruc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\PhongDaoTao\PhanCaTruc.Designer.cs">
+      <DependentUpon>PhanCaTruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\NhanVien\CapNhatThongTinPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\NhanVien\CapNhatThongTinPhong.Designer.cs">
+      <DependentUpon>CapNhatThongTinPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\NhanVien\BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\NhanVien\BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\GiaoVien\DatLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\GiaoVien\DatLich.Designer.cs">
+      <DependentUpon>DatLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loginnn\DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loginnn\DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loginnn\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loginnn\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\PhongDaoTao\DuyetLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\PhongDaoTao\DuyetLich.Designer.cs">
+      <DependentUpon>DuyetLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loginnn\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loginnn\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Loginnn\QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loginnn\QuenMatKhau.Designer.cs">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loginnn\TaoTaiKhoanMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loginnn\TaoTaiKhoanMoi.Designer.cs">
+      <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\ThongTinPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\ThongTinPhong.Designer.cs">
+      <DependentUpon>ThongTinPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\XemLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\XemLich.Designer.cs">
+      <DependentUpon>XemLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Userrr\NhanVien\TaoLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Userrr\NhanVien\TaoLich.Designer.cs">
+      <DependentUpon>TaoLich.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Userrr\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Loginnn\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +159,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Userrr\NhanVien\TaoLich.resx">
+      <DependentUpon>TaoLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,5 +178,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy_Hiệu_Đoàn.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QL_phong_lab
 {
-    public partial class Form1 : Form
+    public partial class CapNhatThongTinPhong : Form
     {
-        public Form1()
+        public CapNhatThongTinPhong()
         {
             InitializeComponent();
         }
