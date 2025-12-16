@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QL_phong_lab
 {
-    public partial class TaoLich : Form
+    public partial class XepLich : Form
     {
-        public TaoLich()
+        public XepLich()
         {
             InitializeComponent();
-        }
-
-        private void TaoLich_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

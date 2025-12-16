@@ -58,7 +58,7 @@
             this.lbl_QMatKhau.AutoSize = true;
             this.lbl_QMatKhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_QMatKhau.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lbl_QMatKhau.Location = new System.Drawing.Point(321, 381);
+            this.lbl_QMatKhau.Location = new System.Drawing.Point(508, 521);
             this.lbl_QMatKhau.Name = "lbl_QMatKhau";
             this.lbl_QMatKhau.Size = new System.Drawing.Size(159, 27);
             this.lbl_QMatKhau.TabIndex = 15;
@@ -78,7 +78,7 @@
             this.btn_DangNhap.IconColor = System.Drawing.Color.MidnightBlue;
             this.btn_DangNhap.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_DangNhap.IconSize = 55;
-            this.btn_DangNhap.Location = new System.Drawing.Point(245, 301);
+            this.btn_DangNhap.Location = new System.Drawing.Point(432, 441);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Rotation = -90D;
             this.btn_DangNhap.Size = new System.Drawing.Size(311, 67);
@@ -97,7 +97,7 @@
             this.pbx_MatKhau.IconColor = System.Drawing.Color.AliceBlue;
             this.pbx_MatKhau.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pbx_MatKhau.IconSize = 57;
-            this.pbx_MatKhau.Location = new System.Drawing.Point(55, 167);
+            this.pbx_MatKhau.Location = new System.Drawing.Point(241, 279);
             this.pbx_MatKhau.Name = "pbx_MatKhau";
             this.pbx_MatKhau.Size = new System.Drawing.Size(64, 57);
             this.pbx_MatKhau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -110,7 +110,7 @@
             this.lbl_MatKhau.AutoSize = true;
             this.lbl_MatKhau.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_MatKhau.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lbl_MatKhau.Location = new System.Drawing.Point(126, 177);
+            this.lbl_MatKhau.Location = new System.Drawing.Point(312, 289);
             this.lbl_MatKhau.Name = "lbl_MatKhau";
             this.lbl_MatKhau.Size = new System.Drawing.Size(121, 33);
             this.lbl_MatKhau.TabIndex = 11;
@@ -122,7 +122,7 @@
             this.pnl_MatKhau.Controls.Add(this.txt_Matkhau);
             this.pnl_MatKhau.Controls.Add(this.panel5);
             this.pnl_MatKhau.Controls.Add(this.panel6);
-            this.pnl_MatKhau.Location = new System.Drawing.Point(309, 177);
+            this.pnl_MatKhau.Location = new System.Drawing.Point(495, 289);
             this.pnl_MatKhau.Name = "pnl_MatKhau";
             this.pnl_MatKhau.Size = new System.Drawing.Size(438, 75);
             this.pnl_MatKhau.TabIndex = 13;
@@ -177,7 +177,7 @@
             this.pb_user.IconColor = System.Drawing.Color.AliceBlue;
             this.pb_user.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pb_user.IconSize = 57;
-            this.pb_user.Location = new System.Drawing.Point(55, 78);
+            this.pb_user.Location = new System.Drawing.Point(241, 120);
             this.pb_user.Name = "pb_user";
             this.pb_user.Size = new System.Drawing.Size(64, 57);
             this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -191,7 +191,7 @@
             this.lbl_TaiKhoan.BackColor = System.Drawing.Color.Transparent;
             this.lbl_TaiKhoan.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TaiKhoan.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lbl_TaiKhoan.Location = new System.Drawing.Point(126, 88);
+            this.lbl_TaiKhoan.Location = new System.Drawing.Point(312, 130);
             this.lbl_TaiKhoan.Name = "lbl_TaiKhoan";
             this.lbl_TaiKhoan.Size = new System.Drawing.Size(183, 33);
             this.lbl_TaiKhoan.TabIndex = 8;
@@ -202,7 +202,7 @@
             this.pnl_TenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_TenDangNhap.Controls.Add(this.panel3);
             this.pnl_TenDangNhap.Controls.Add(this.panel2);
-            this.pnl_TenDangNhap.Location = new System.Drawing.Point(309, 88);
+            this.pnl_TenDangNhap.Location = new System.Drawing.Point(495, 130);
             this.pnl_TenDangNhap.Name = "pnl_TenDangNhap";
             this.pnl_TenDangNhap.Size = new System.Drawing.Size(438, 75);
             this.pnl_TenDangNhap.TabIndex = 10;
@@ -243,7 +243,7 @@
             this.txt_TenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_TenDangNhap.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenDangNhap.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txt_TenDangNhap.Location = new System.Drawing.Point(312, 87);
+            this.txt_TenDangNhap.Location = new System.Drawing.Point(498, 129);
             this.txt_TenDangNhap.Name = "txt_TenDangNhap";
             this.txt_TenDangNhap.Size = new System.Drawing.Size(391, 46);
             this.txt_TenDangNhap.TabIndex = 1;
@@ -254,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(800, 548);
+            this.ClientSize = new System.Drawing.Size(1174, 688);
             this.Controls.Add(this.lbl_QMatKhau);
             this.Controls.Add(this.txt_TenDangNhap);
             this.Controls.Add(this.btn_DangNhap);

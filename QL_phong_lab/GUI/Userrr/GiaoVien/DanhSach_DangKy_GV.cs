@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QL_phong_lab
 {
-    public partial class GuiDuyet : Form
+    public partial class DanhSach_DangKy_GV : Form
     {
-        public GuiDuyet()
+        public DanhSach_DangKy_GV()
         {
             InitializeComponent();
         }

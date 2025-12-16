@@ -48,7 +48,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(282, 704);
+            this.panel1.Size = new System.Drawing.Size(282, 844);
             this.panel1.TabIndex = 0;
             // 
             // lbl_NguoiDung
@@ -86,7 +86,7 @@
             this.panel2.ForeColor = System.Drawing.Color.AliceBlue;
             this.panel2.Location = new System.Drawing.Point(282, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(836, 100);
+            this.panel2.Size = new System.Drawing.Size(1196, 100);
             this.panel2.TabIndex = 1;
             // 
             // lbl_Login
@@ -94,7 +94,7 @@
             this.lbl_Login.AutoSize = true;
             this.lbl_Login.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Login.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lbl_Login.Location = new System.Drawing.Point(341, 36);
+            this.lbl_Login.Location = new System.Drawing.Point(537, 29);
             this.lbl_Login.Name = "lbl_Login";
             this.lbl_Login.Size = new System.Drawing.Size(154, 45);
             this.lbl_Login.TabIndex = 0;
@@ -106,7 +106,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(282, 100);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(836, 604);
+            this.panel3.Size = new System.Drawing.Size(1196, 744);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 704);
+            this.ClientSize = new System.Drawing.Size(1478, 844);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

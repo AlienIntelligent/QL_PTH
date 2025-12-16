@@ -40,11 +40,14 @@
             this.lbl_NguoiDung = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_thongbao = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnl_Desktop = new System.Windows.Forms.Panel();
             this.pnl_Menu.SuspendLayout();
             this.pnl_Logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Menu
@@ -60,7 +63,7 @@
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(288, 774);
+            this.pnl_Menu.Size = new System.Drawing.Size(288, 844);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_F
@@ -74,7 +77,7 @@
             this.btn_F.IconColor = System.Drawing.Color.GhostWhite;
             this.btn_F.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_F.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_F.Location = new System.Drawing.Point(0, 562);
+            this.btn_F.Location = new System.Drawing.Point(0, 605);
             this.btn_F.Name = "btn_F";
             this.btn_F.Size = new System.Drawing.Size(288, 65);
             this.btn_F.TabIndex = 6;
@@ -93,7 +96,7 @@
             this.btn_E.IconColor = System.Drawing.Color.GhostWhite;
             this.btn_E.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_E.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_E.Location = new System.Drawing.Point(0, 497);
+            this.btn_E.Location = new System.Drawing.Point(0, 540);
             this.btn_E.Name = "btn_E";
             this.btn_E.Size = new System.Drawing.Size(288, 65);
             this.btn_E.TabIndex = 5;
@@ -112,7 +115,7 @@
             this.btn_D.IconColor = System.Drawing.Color.GhostWhite;
             this.btn_D.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_D.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_D.Location = new System.Drawing.Point(0, 432);
+            this.btn_D.Location = new System.Drawing.Point(0, 475);
             this.btn_D.Name = "btn_D";
             this.btn_D.Size = new System.Drawing.Size(288, 65);
             this.btn_D.TabIndex = 4;
@@ -131,7 +134,7 @@
             this.btn_C.IconColor = System.Drawing.Color.GhostWhite;
             this.btn_C.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_C.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_C.Location = new System.Drawing.Point(0, 367);
+            this.btn_C.Location = new System.Drawing.Point(0, 410);
             this.btn_C.Name = "btn_C";
             this.btn_C.Size = new System.Drawing.Size(288, 65);
             this.btn_C.TabIndex = 3;
@@ -150,7 +153,7 @@
             this.btn_B.IconColor = System.Drawing.Color.GhostWhite;
             this.btn_B.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_B.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_B.Location = new System.Drawing.Point(0, 302);
+            this.btn_B.Location = new System.Drawing.Point(0, 345);
             this.btn_B.Name = "btn_B";
             this.btn_B.Size = new System.Drawing.Size(288, 65);
             this.btn_B.TabIndex = 2;
@@ -169,7 +172,7 @@
             this.btn_A.IconColor = System.Drawing.Color.GhostWhite;
             this.btn_A.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_A.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_A.Location = new System.Drawing.Point(0, 237);
+            this.btn_A.Location = new System.Drawing.Point(0, 280);
             this.btn_A.Name = "btn_A";
             this.btn_A.Size = new System.Drawing.Size(288, 65);
             this.btn_A.TabIndex = 1;
@@ -185,7 +188,7 @@
             this.pnl_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Logo.Location = new System.Drawing.Point(0, 0);
             this.pnl_Logo.Name = "pnl_Logo";
-            this.pnl_Logo.Size = new System.Drawing.Size(288, 237);
+            this.pnl_Logo.Size = new System.Drawing.Size(288, 280);
             this.pnl_Logo.TabIndex = 0;
             this.pnl_Logo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Logo_Paint);
             // 
@@ -193,7 +196,7 @@
             // 
             this.lbl_NguoiDung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NguoiDung.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lbl_NguoiDung.Location = new System.Drawing.Point(5, 192);
+            this.lbl_NguoiDung.Location = new System.Drawing.Point(6, 235);
             this.lbl_NguoiDung.Name = "lbl_NguoiDung";
             this.lbl_NguoiDung.Size = new System.Drawing.Size(279, 41);
             this.lbl_NguoiDung.TabIndex = 1;
@@ -210,29 +213,56 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 177;
-            this.iconPictureBox1.Location = new System.Drawing.Point(52, 12);
+            this.iconPictureBox1.IconSize = 220;
+            this.iconPictureBox1.Location = new System.Drawing.Point(29, 12);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(180, 177);
+            this.iconPictureBox1.Size = new System.Drawing.Size(230, 220);
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btn_thongbao);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(288, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 92);
+            this.panel1.Size = new System.Drawing.Size(1190, 86);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_thongbao
+            // 
+            this.btn_thongbao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_thongbao.BackColor = System.Drawing.Color.Transparent;
+            this.btn_thongbao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_thongbao.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.btn_thongbao.IconColor = System.Drawing.Color.GhostWhite;
+            this.btn_thongbao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_thongbao.Location = new System.Drawing.Point(1123, 12);
+            this.btn_thongbao.Name = "btn_thongbao";
+            this.btn_thongbao.Size = new System.Drawing.Size(55, 55);
+            this.btn_thongbao.TabIndex = 1;
+            this.btn_thongbao.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label1.Location = new System.Drawing.Point(286, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(618, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Phần Mềm Quản Lý Lịch Thực Hành Phòng Máy";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(288, 92);
+            this.panel2.Location = new System.Drawing.Point(288, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(950, 13);
+            this.panel2.Size = new System.Drawing.Size(1190, 13);
             this.panel2.TabIndex = 2;
             // 
             // pnl_Desktop
@@ -241,16 +271,16 @@
             this.pnl_Desktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_Desktop.BackgroundImage")));
             this.pnl_Desktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnl_Desktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Desktop.Location = new System.Drawing.Point(288, 105);
+            this.pnl_Desktop.Location = new System.Drawing.Point(288, 99);
             this.pnl_Desktop.Name = "pnl_Desktop";
-            this.pnl_Desktop.Size = new System.Drawing.Size(950, 669);
+            this.pnl_Desktop.Size = new System.Drawing.Size(1190, 745);
             this.pnl_Desktop.TabIndex = 3;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1238, 774);
+            this.ClientSize = new System.Drawing.Size(1478, 844);
             this.Controls.Add(this.pnl_Desktop);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -263,6 +293,7 @@
             this.pnl_Menu.ResumeLayout(false);
             this.pnl_Logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -282,6 +313,8 @@
         private FontAwesome.Sharp.IconButton btn_D;
         private FontAwesome.Sharp.IconButton btn_C;
         private FontAwesome.Sharp.IconButton btn_B;
+        private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton btn_thongbao;
     }
 }
 

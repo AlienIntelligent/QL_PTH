@@ -87,7 +87,7 @@
             this.pnl_DS_duyet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_DS_duyet.Location = new System.Drawing.Point(0, 50);
             this.pnl_DS_duyet.Name = "pnl_DS_duyet";
-            this.pnl_DS_duyet.Size = new System.Drawing.Size(800, 400);
+            this.pnl_DS_duyet.Size = new System.Drawing.Size(1168, 639);
             this.pnl_DS_duyet.TabIndex = 6;
             // 
             // panel1
@@ -95,7 +95,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.rbtn_TuChoi);
             this.panel1.Controls.Add(this.rbtn_DongY);
-            this.panel1.Location = new System.Drawing.Point(32, 247);
+            this.panel1.Location = new System.Drawing.Point(216, 366);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(476, 54);
             this.panel1.TabIndex = 14;
@@ -139,7 +139,7 @@
             this.btn_Accept.IconColor = System.Drawing.Color.DarkBlue;
             this.btn_Accept.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Accept.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Accept.Location = new System.Drawing.Point(548, 240);
+            this.btn_Accept.Location = new System.Drawing.Point(830, 473);
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.Size = new System.Drawing.Size(167, 52);
             this.btn_Accept.TabIndex = 13;
@@ -153,7 +153,7 @@
             this.pnl_sobuoi.Controls.Add(this.label5);
             this.pnl_sobuoi.Controls.Add(this.iconPictureBox5);
             this.pnl_sobuoi.Controls.Add(this.lbl_sobuoi);
-            this.pnl_sobuoi.Location = new System.Drawing.Point(437, 180);
+            this.pnl_sobuoi.Location = new System.Drawing.Point(621, 267);
             this.pnl_sobuoi.Name = "pnl_sobuoi";
             this.pnl_sobuoi.Size = new System.Drawing.Size(351, 50);
             this.pnl_sobuoi.TabIndex = 11;
@@ -200,9 +200,9 @@
             this.pnl_phong.Controls.Add(this.label4);
             this.pnl_phong.Controls.Add(this.iconPictureBox4);
             this.pnl_phong.Controls.Add(this.lbl_Phong);
-            this.pnl_phong.Location = new System.Drawing.Point(32, 180);
+            this.pnl_phong.Location = new System.Drawing.Point(216, 267);
             this.pnl_phong.Name = "pnl_phong";
-            this.pnl_phong.Size = new System.Drawing.Size(404, 50);
+            this.pnl_phong.Size = new System.Drawing.Size(343, 50);
             this.pnl_phong.TabIndex = 12;
             // 
             // label4
@@ -210,7 +210,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(261, 10);
+            this.label4.Location = new System.Drawing.Point(193, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 35);
             this.label4.TabIndex = 9;
@@ -237,9 +237,9 @@
             this.lbl_Phong.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lbl_Phong.Location = new System.Drawing.Point(67, 13);
             this.lbl_Phong.Name = "lbl_Phong";
-            this.lbl_Phong.Size = new System.Drawing.Size(198, 27);
+            this.lbl_Phong.Size = new System.Drawing.Size(120, 27);
             this.lbl_Phong.TabIndex = 0;
-            this.lbl_Phong.Text = "Phòng mong muốn:";
+            this.lbl_Phong.Text = "Tên phòng:";
             // 
             // pnl_lophoc
             // 
@@ -247,7 +247,7 @@
             this.pnl_lophoc.Controls.Add(this.label3);
             this.pnl_lophoc.Controls.Add(this.iconPictureBox3);
             this.pnl_lophoc.Controls.Add(this.lbl_Lophoc);
-            this.pnl_lophoc.Location = new System.Drawing.Point(437, 109);
+            this.pnl_lophoc.Location = new System.Drawing.Point(621, 166);
             this.pnl_lophoc.Name = "pnl_lophoc";
             this.pnl_lophoc.Size = new System.Drawing.Size(331, 50);
             this.pnl_lophoc.TabIndex = 10;
@@ -295,7 +295,7 @@
             this.pnl_monhoc.Controls.Add(this.label2);
             this.pnl_monhoc.Controls.Add(this.iconPictureBox2);
             this.pnl_monhoc.Controls.Add(this.lbl_Monhoc);
-            this.pnl_monhoc.Location = new System.Drawing.Point(32, 109);
+            this.pnl_monhoc.Location = new System.Drawing.Point(216, 166);
             this.pnl_monhoc.Name = "pnl_monhoc";
             this.pnl_monhoc.Size = new System.Drawing.Size(399, 50);
             this.pnl_monhoc.TabIndex = 9;
@@ -345,7 +345,7 @@
             this.pnl_namhoc.Controls.Add(this.lbl_HocKi);
             this.pnl_namhoc.Controls.Add(this.lbl_num);
             this.pnl_namhoc.Controls.Add(this.lbl_MaDK);
-            this.pnl_namhoc.Location = new System.Drawing.Point(32, 36);
+            this.pnl_namhoc.Location = new System.Drawing.Point(216, 66);
             this.pnl_namhoc.Name = "pnl_namhoc";
             this.pnl_namhoc.Size = new System.Drawing.Size(736, 50);
             this.pnl_namhoc.TabIndex = 8;
@@ -430,7 +430,7 @@
             this.pnl_Title_duyet_DS.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Title_duyet_DS.Location = new System.Drawing.Point(0, 0);
             this.pnl_Title_duyet_DS.Name = "pnl_Title_duyet_DS";
-            this.pnl_Title_duyet_DS.Size = new System.Drawing.Size(800, 50);
+            this.pnl_Title_duyet_DS.Size = new System.Drawing.Size(1168, 50);
             this.pnl_Title_duyet_DS.TabIndex = 5;
             // 
             // lbl_DS_duyet
@@ -439,7 +439,7 @@
             this.lbl_DS_duyet.AutoSize = true;
             this.lbl_DS_duyet.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DS_duyet.ForeColor = System.Drawing.Color.GhostWhite;
-            this.lbl_DS_duyet.Location = new System.Drawing.Point(85, 7);
+            this.lbl_DS_duyet.Location = new System.Drawing.Point(269, 7);
             this.lbl_DS_duyet.Name = "lbl_DS_duyet";
             this.lbl_DS_duyet.Size = new System.Drawing.Size(630, 36);
             this.lbl_DS_duyet.TabIndex = 0;
@@ -449,7 +449,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1168, 689);
             this.Controls.Add(this.pnl_DS_duyet);
             this.Controls.Add(this.pnl_Title_duyet_DS);
             this.Name = "DuyetLich_Phong";

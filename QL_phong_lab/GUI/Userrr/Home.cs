@@ -33,31 +33,47 @@ namespace QL_phong_lab
 
             if (role == "Quản trị viên")
             {
-                btn_A.Text = "Quản Lý Lịch";
-                btn_A.IconChar = IconChar.CalendarCheck;
-                btn_B.Text = "Quản Lý Phòng";
-                btn_C.Text = "Quản Lý Thiết Bị";
-                btn_D.Text = "Báo Cáo Thống Kê";
-                btn_E.Text = "Quản Lý Người Dùng";
-                btn_F.Text = "Cài Đặt Hệ Thống";
+                btn_A.Text = "DashBoard";
+                btn_A.IconChar = IconChar.Dashboard;
+                btn_B.Text = "Duyệt lịch";
+                btn_B.IconChar = IconChar.CalendarDay;
+                btn_C.Text = "Thêm tài khoản mới";
+                btn_C.IconChar = IconChar.PeopleGroup;
+                btn_D.Text = "Phân Ca Trực";
+                btn_D.IconChar = IconChar.PersonCircleCheck;
+                btn_E.Text = "Xem Lịch";
+                btn_E.IconChar = IconChar.Calendar;
+                btn_F.Text = "Xem Phòng";
+                btn_F.IconChar = IconChar.Computer;
             }
             else if (role == "Giáo viên")
             {
-                btn_A.Text = "Đặt Lịch";
-                btn_B.Text = "Xem Lịch";
-                btn_C.Visible = false;
-                btn_D.Visible = false;
-                btn_E.Visible = false;
+                btn_A.Text = "DashBoard";
+                btn_A.IconChar = IconChar.Dashboard; 
+                btn_B.Text = "Đặt Lịch";
+                btn_B.IconChar = IconChar.CalendarDay;
+                btn_C.Text = "Xem Lịch";
+                btn_C.IconChar = IconChar.Calendar;
+                btn_D.Text = "Xem Bản Đăng Ký";
+                btn_D.IconChar = IconChar.CalendarAlt;
+                btn_E.Text = "Xem Phòng";
+                btn_E.IconChar = IconChar.Computer;
                 btn_F.Visible = false;
             }
             else if (role == "Nhân viên")
             {
-                btn_A.Text = "Quản Lý Lịch";
-                btn_B.Text = "Quản Lý Phòng";
-                btn_C.Text = "Quản Lý Thiết Bị";
-                btn_D.Visible = false;
-                btn_E.Visible = false;
-                btn_F.Visible = false;
+                btn_A.Text = "DashBoard";
+                btn_A.IconChar = IconChar.Dashboard;
+                btn_B.Text = "Chốt Lịch";
+                btn_B.IconChar = IconChar.CalendarDay;
+                btn_C.Text = "Cập Nhật Thiết Bị";
+                btn_C.IconChar = IconChar.Calendar;
+                btn_D.Text = "Báo Cáo Sự Cố";
+                btn_D.IconChar = IconChar.CalendarAlt;
+                btn_E.Text = "Xem Lịch";
+                btn_E.IconChar = IconChar.Calendar;
+                btn_F.Text = "Xem Phòng";
+                btn_F.IconChar = IconChar.Computer;
             }
         }
         public void Menu_TheoVaitro(string quyen, string btn_name)
@@ -82,22 +98,22 @@ namespace QL_phong_lab
             switch (btn_name)
             {
                 case "btn_A":
-                    //childForm = new FormQLLich();
+                    OpenChildForm(new Dashboard());
                     break;
                 case "btn_B":
-                    //childForm = new FormQLPhong();
+                    OpenChildForm(new DuyetLich_DanhSach());
                     break;
                 case "btn_C":
-                    //childForm = new FormQLThietBi();
+                    OpenChildForm(new TaoTaiKhoanMoi());
                     break;
                 case "btn_D":
-                    //childForm = new FormBaoCaoThongKe();
+                    OpenChildForm(new PhanCaTruc());
                     break;
                 case "btn_E":
-                    //childForm = new FormQLNguoiDung();
+                    OpenChildForm(new XemLich());
                     break;
                 case "btn_F":
-                    //childForm = new FormCaiDatHeThong();
+                    OpenChildForm(new ThongTinPhong());
                     break;
             }
         }
@@ -107,10 +123,19 @@ namespace QL_phong_lab
             switch (btn_name)
             {
                 case "btn_A":
-                    OpenChildForm(new DatLich());
+                    OpenChildForm(new Dashboard());
                     break;
                 case "btn_B":
+                    OpenChildForm(new DatLich());
+                    break;
+                case "btn_C":
                     OpenChildForm(new XemLich());
+                    break;
+                case "btn_D":
+                    OpenChildForm(new DanhSach_DangKy_GV());
+                    break;
+                case "btn_E":
+                    OpenChildForm(new ThongTinPhong());
                     break;
             }
         }
@@ -120,13 +145,22 @@ namespace QL_phong_lab
             switch (btn_name)
             {
                 case "btn_A":
-                    //childForm = new FormQLLich();
+                    OpenChildForm(new Dashboard());
                     break;
                 case "btn_B":
-                    //childForm = new FormQLPhong();
+                    OpenChildForm(new XepLich());
                     break;
                 case "btn_C":
-                    //childForm = new FormQLThietBi();
+                    OpenChildForm(new CapNhatThongTinPhong());
+                    break;
+                case "btn_D":
+                    OpenChildForm(new BaoCao());
+                    break;
+                case "btn_E":
+                    OpenChildForm(new XemLich());
+                    break;
+                case "btn_F":
+                    OpenChildForm(new CaTruc());
                     break;
             }
         }
@@ -268,6 +302,11 @@ namespace QL_phong_lab
             {
                 lbl_NguoiDung.Text = DangNhap.taikhoan;
             }
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ThongTinNguoiDung());
         }
     }
 }
