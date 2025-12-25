@@ -31,15 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_HoTen = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_DangXuat = new FontAwesome.Sharp.IconButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -56,12 +51,11 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_DangXuat = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -96,7 +90,6 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel7);
@@ -109,30 +102,12 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // btn_DangXuat
-            // 
-            this.btn_DangXuat.BackColor = System.Drawing.Color.Cyan;
-            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btn_DangXuat.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn_DangXuat.IconColor = System.Drawing.Color.Black;
-            this.btn_DangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_DangXuat.Location = new System.Drawing.Point(738, 418);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(146, 51);
-            this.btn_DangXuat.TabIndex = 0;
-            this.btn_DangXuat.Text = "Đăng xuất";
-            this.btn_DangXuat.UseVisualStyleBackColor = false;
-            this.btn_DangXuat.Click += new System.EventHandler(this.btn_DangXuat_Click);
-            // 
             // panel6
             // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.Controls.Add(this.iconPictureBox5);
             this.panel6.Controls.Add(this.textBox5);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(482, 273);
+            this.panel6.Location = new System.Drawing.Point(56, 267);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(420, 50);
             this.panel6.TabIndex = 23;
@@ -170,53 +145,8 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Bộ môn:";
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.Controls.Add(this.iconPictureBox3);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(56, 273);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(420, 50);
-            this.panel4.TabIndex = 22;
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.MapLocationDot;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.DarkSlateBlue;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 50;
-            this.iconPictureBox3.Location = new System.Drawing.Point(5, 0);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.iconPictureBox3.TabIndex = 9;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(227, 10);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(176, 35);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 27);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Địa chỉ:";
-            // 
             // panel3
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.Controls.Add(this.iconPictureBox1);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label1);
@@ -260,7 +190,6 @@
             // 
             // panel5
             // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.Controls.Add(this.iconPictureBox4);
             this.panel5.Controls.Add(this.textBox4);
             this.panel5.Controls.Add(this.label4);
@@ -304,7 +233,6 @@
             // 
             // panel7
             // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.Controls.Add(this.pic_MatKhau);
             this.panel7.Controls.Add(this.tbx_MatKhau);
             this.panel7.Controls.Add(this.lbl_TaoMatKhau);
@@ -348,7 +276,6 @@
             // 
             // panel8
             // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.Controls.Add(this.iconPictureBox2);
             this.panel8.Controls.Add(this.textBox2);
             this.panel8.Controls.Add(this.label2);
@@ -390,6 +317,24 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Giới tính:";
             // 
+            // btn_DangXuat
+            // 
+            this.btn_DangXuat.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_DangXuat.BackColor = System.Drawing.Color.Cyan;
+            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_DangXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangXuat.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_DangXuat.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_DangXuat.IconColor = System.Drawing.Color.Black;
+            this.btn_DangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_DangXuat.Location = new System.Drawing.Point(642, 419);
+            this.btn_DangXuat.Name = "btn_DangXuat";
+            this.btn_DangXuat.Size = new System.Drawing.Size(146, 51);
+            this.btn_DangXuat.TabIndex = 0;
+            this.btn_DangXuat.Text = "Đăng xuất";
+            this.btn_DangXuat.UseVisualStyleBackColor = false;
+            this.btn_DangXuat.Click += new System.EventHandler(this.btn_DangXuat_Click);
+            // 
             // ThongTinNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -405,9 +350,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
@@ -434,10 +376,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel4;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.TextBox textBox1;

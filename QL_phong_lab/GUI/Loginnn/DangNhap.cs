@@ -74,12 +74,10 @@ namespace QL_phong_lab
 
         private void txt_TenDangNhap_TextChanged(object sender, EventArgs e)
         {
-            txt_TenDangNhap.Text.Trim();
             taikhoan = txt_TenDangNhap.Text;
         }
         private void txt_MatKhau_TextChanged(object sender, EventArgs e)
         {
-            txt_Matkhau.Text.Trim();
             matkhau = txt_Matkhau.Text;
         }
 

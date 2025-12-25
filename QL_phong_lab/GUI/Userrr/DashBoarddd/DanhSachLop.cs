@@ -9,20 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QL_phong_lab
+namespace QL_phong_lab.GUI.Userrr.Admin
 {
-    public partial class BaoCao : Form
+    public partial class DanhSachLop : Form
     {
-        public BaoCao()
+        public DanhSachLop()
         {
             InitializeComponent();
         }
 
-        private void BaoCao_Load(object sender, EventArgs e)
+        private void DanhSachLop_Load(object sender, EventArgs e)
         {
             try
             {
-                dtv_Suco.DataSource = new SuCo().TableSuCo("SELECT * from BaoCaoSuCo");
+                dtv_Lop.DataSource = new LopHoc().TableLopHoc("SELECT * from LopHoc");
             }
             catch (Exception ex)
             {

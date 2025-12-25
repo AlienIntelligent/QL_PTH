@@ -7,36 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QL_phong_lab
+namespace QL_phong_lab.BLL
 {
-    public class GiaoVien
+    public class ThietBiPhong
     {
-        public string HoTen { get; set; }
-        public string NgaySinh { get; set; }
-        public string GioiTinh { get; set; }
-        public string SoDienThoai { get; set; }
-        public string Email { get; set; }
-        public string MaBomon { get; set; }
-        public string MaGiaoVien { get; set; }
-
-        public GiaoVien(string hoTen, string ngaySinh, string gioiTinh, string soDienThoai, string email, string maBomon, string maGV)
+        public string MaThietBi { get; set; }
+        public string MaThietBiPhong { get; set; }
+        public string MaPhong { get; set; }
+        public int SL_Cap1 { get; set; }
+        public int SL_Cap2 { get; set; }
+        public int SL_Cap3 { get; set; }
+        public int SL_Cap4 { get; set; }
+        public int SL_Cap5 { get; set; }
+        public int SL_Hong { get; set; }
+        public ThietBiPhong(string maThietBi, string maThietBiPhong, string maPhong, int sL_Cap1, int sL_Cap2, int sL_Cap3, int sL_Cap4, int sL_Cap5, int sL_Hong)
         {
-            HoTen = hoTen;
-            NgaySinh = ngaySinh;
-            GioiTinh = gioiTinh;
-            SoDienThoai = soDienThoai;
-            Email = email;
-            MaBomon = maBomon;
-            MaGiaoVien = maGV;
+            MaThietBi = maThietBi;
+            MaThietBiPhong = maThietBiPhong;
+            MaPhong = maPhong;
+            SL_Cap1 = sL_Cap1;
+            SL_Cap2 = sL_Cap2;
+            SL_Cap3 = sL_Cap3;
+            SL_Cap4 = sL_Cap4;
+            SL_Cap5 = sL_Cap5;
+            SL_Hong = sL_Hong;
         }
+        public ThietBiPhong() { }
 
-        public GiaoVien()
-        {
-        }
 
         SqlDataAdapter dataAdapter;
         SqlCommand sqlCommand;
-        public DataTable TableGV(string query)
+        public DataTable TableThietBiPhong(string query)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))

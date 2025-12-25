@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QL_phong_lab.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,18 @@ namespace QL_phong_lab
         private void pnl_Item_duyet_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void DuyetLich_DanhSach_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                BanDangKy.Load_DSChoduyet(dtv_choduyet, cbx_Giaovien.Text = null, cbx_maBDK.Text = null, cbx_phong.Text = null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
+            }
         }
     }
 }

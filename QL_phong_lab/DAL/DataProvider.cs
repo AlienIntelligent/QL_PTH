@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Documents;
+using System.Data;
+
+
 
 namespace QL_phong_lab
 {
@@ -130,5 +133,7 @@ namespace QL_phong_lab
                 CloseConnection();
             }
         }
+
+        
     }
 }

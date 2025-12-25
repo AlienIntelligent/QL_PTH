@@ -1,41 +1,33 @@
-﻿
-using QL_phong_lab.DAL;
-using System.Collections;
+﻿using QL_phong_lab.DAL;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace QL_phong_lab
+namespace QL_phong_lab.BLL
 {
-    public class LoginInfo
+    public class BoMon
     {
-        public string TaiKhoan { get; set; }
+        public string MaBoMon { get; set; }
+        public string TenBoMon { get; set; }
+        public string ChuyenMon { get; set; }
 
-        public string MatKhau { get; set; }
-
-        public string VaiTro { get; set; }
-
-        public string MaNV { get; set; }
-        public string MaGV { get; set; }
-
-        public bool TrangThai { get; set; }
-
-        public LoginInfo(string taiKhoan, string matKhau, string vaiTro, bool trangThai, string maNV, string maGV)
+        public BoMon(string maBoMon, string tenBoMon, string chuyenMon)
         {
-            TaiKhoan = taiKhoan;
-            MatKhau = matKhau;
-            VaiTro = vaiTro;
-            TrangThai = trangThai;
-            MaNV = maNV;
-            MaGV = maGV;
+            MaBoMon = maBoMon;
+            TenBoMon = tenBoMon;
+            ChuyenMon = chuyenMon;
         }
-        
-        public LoginInfo()
+        public BoMon()
         {
         }
 
         SqlDataAdapter dataAdapter;
         SqlCommand sqlCommand;
-        public DataTable TableTaiKhoan(string query)
+        public DataTable TableBoMon(string query)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))

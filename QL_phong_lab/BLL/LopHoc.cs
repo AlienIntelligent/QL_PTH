@@ -1,41 +1,35 @@
-﻿
-using QL_phong_lab.DAL;
-using System.Collections;
+﻿using QL_phong_lab.DAL;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace QL_phong_lab
+namespace QL_phong_lab.BLL
 {
-    public class LoginInfo
+    public class LopHoc
     {
-        public string TaiKhoan { get; set; }
+        private string MaLop { get; set; }
+        private string TenLop { get; set; }
+        private string LopTruong { get; set; }
+        private string SoDienThoai { get; set; }
+        private int QuanSo { get; set; }
 
-        public string MatKhau { get; set; }
-
-        public string VaiTro { get; set; }
-
-        public string MaNV { get; set; }
-        public string MaGV { get; set; }
-
-        public bool TrangThai { get; set; }
-
-        public LoginInfo(string taiKhoan, string matKhau, string vaiTro, bool trangThai, string maNV, string maGV)
+        public LopHoc(string maLop, string tenLop, string lopTruong, string soDienThoai, int quanSo)
         {
-            TaiKhoan = taiKhoan;
-            MatKhau = matKhau;
-            VaiTro = vaiTro;
-            TrangThai = trangThai;
-            MaNV = maNV;
-            MaGV = maGV;
+            MaLop = maLop;
+            TenLop = tenLop;
+            LopTruong = lopTruong;
+            SoDienThoai = soDienThoai;
+            QuanSo = quanSo;
         }
-        
-        public LoginInfo()
-        {
-        }
+        public LopHoc() { }
 
         SqlDataAdapter dataAdapter;
         SqlCommand sqlCommand;
-        public DataTable TableTaiKhoan(string query)
+        public DataTable TableLopHoc(string query)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
@@ -58,5 +52,6 @@ namespace QL_phong_lab
                 DataProvider.CloseConnection();
             }
         }
+
     }
 }

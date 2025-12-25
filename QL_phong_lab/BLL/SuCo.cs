@@ -7,36 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QL_phong_lab
+namespace QL_phong_lab.BLL
 {
-    public class GiaoVien
+    public class SuCo
     {
-        public string HoTen { get; set; }
-        public string NgaySinh { get; set; }
-        public string GioiTinh { get; set; }
-        public string SoDienThoai { get; set; }
-        public string Email { get; set; }
-        public string MaBomon { get; set; }
-        public string MaGiaoVien { get; set; }
+        public string MaSuCo { get; set; }
+        public string MaLichPhong { get; set; }
+        public string MoTa { get; set; }
+        public int MaCaTruc { get; set; }
+        public DateTime ThoiGianGhiNhan { get; set; }
+        public DateTime NgayBaoCao { get; set; }
+        public string KetQuaXuLy { get; set; }
 
-        public GiaoVien(string hoTen, string ngaySinh, string gioiTinh, string soDienThoai, string email, string maBomon, string maGV)
+        public SuCo(string maSuCo, string maLichPhong, string moTa, int maCaTruc, DateTime thoiGianGhiNhan, DateTime ngayBaoCao, string ketQuaXuLy)
         {
-            HoTen = hoTen;
-            NgaySinh = ngaySinh;
-            GioiTinh = gioiTinh;
-            SoDienThoai = soDienThoai;
-            Email = email;
-            MaBomon = maBomon;
-            MaGiaoVien = maGV;
+            MaSuCo = maSuCo;
+            MaLichPhong = maLichPhong;
+            MoTa = moTa;
+            MaCaTruc = maCaTruc;
+            ThoiGianGhiNhan = thoiGianGhiNhan;
+            NgayBaoCao = ngayBaoCao;
+            KetQuaXuLy = ketQuaXuLy;
         }
-
-        public GiaoVien()
-        {
-        }
+        public SuCo() { }
 
         SqlDataAdapter dataAdapter;
         SqlCommand sqlCommand;
-        public DataTable TableGV(string query)
+        public DataTable TableSuCo(string query)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))

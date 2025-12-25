@@ -1,41 +1,37 @@
-﻿
-using QL_phong_lab.DAL;
-using System.Collections;
+﻿using QL_phong_lab.DAL;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace QL_phong_lab
+namespace QL_phong_lab.BLL
 {
-    public class LoginInfo
+    public class CaTrucNV
     {
-        public string TaiKhoan { get; set; }
-
-        public string MatKhau { get; set; }
-
-        public string VaiTro { get; set; }
-
+        public int MaCaTruc { get; set; }
         public string MaNV { get; set; }
-        public string MaGV { get; set; }
+        public string CaTruc { get; set; }
 
-        public bool TrangThai { get; set; }
+        public DateTime ngaytruc { get; set; }
 
-        public LoginInfo(string taiKhoan, string matKhau, string vaiTro, bool trangThai, string maNV, string maGV)
+        public CaTrucNV(int maCaTruc, string maNV, string caTruc, DateTime ngaytruc)
         {
-            TaiKhoan = taiKhoan;
-            MatKhau = matKhau;
-            VaiTro = vaiTro;
-            TrangThai = trangThai;
+            MaCaTruc = maCaTruc;
             MaNV = maNV;
-            MaGV = maGV;
+            CaTruc = caTruc;
+            this.ngaytruc = ngaytruc;
         }
-        
-        public LoginInfo()
+
+        public CaTrucNV()
         {
         }
 
         SqlDataAdapter dataAdapter;
         SqlCommand sqlCommand;
-        public DataTable TableTaiKhoan(string query)
+        public DataTable TableCaTruc(string query)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
@@ -58,5 +54,6 @@ namespace QL_phong_lab
                 DataProvider.CloseConnection();
             }
         }
+
     }
 }

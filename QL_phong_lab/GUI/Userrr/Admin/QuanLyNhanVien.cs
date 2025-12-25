@@ -1,5 +1,4 @@
-﻿using QL_phong_lab.BLL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,18 +10,18 @@ using System.Windows.Forms;
 
 namespace QL_phong_lab
 {
-    public partial class BaoCao : Form
+    public partial class QuanLyNhanVien : Form
     {
-        public BaoCao()
+        public QuanLyNhanVien()
         {
             InitializeComponent();
         }
 
-        private void BaoCao_Load(object sender, EventArgs e)
+        private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
             try
             {
-                dtv_Suco.DataSource = new SuCo().TableSuCo("SELECT * from BaoCaoSuCo");
+                dtv_danhsachNV.DataSource = new NhanVien().TableNV("SELECT * from NhanVien");
             }
             catch (Exception ex)
             {

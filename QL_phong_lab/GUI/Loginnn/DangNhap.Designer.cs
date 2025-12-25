@@ -150,7 +150,7 @@
             // 
             this.lbl_MatKhau_err.AutoSize = true;
             this.lbl_MatKhau_err.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MatKhau_err.ForeColor = System.Drawing.Color.Red;
+            this.lbl_MatKhau_err.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbl_MatKhau_err.Location = new System.Drawing.Point(0, 5);
             this.lbl_MatKhau_err.Name = "lbl_MatKhau_err";
             this.lbl_MatKhau_err.Size = new System.Drawing.Size(340, 25);
@@ -220,7 +220,7 @@
             // 
             this.lbl_TenDangNhap_err.AutoSize = true;
             this.lbl_TenDangNhap_err.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TenDangNhap_err.ForeColor = System.Drawing.Color.Red;
+            this.lbl_TenDangNhap_err.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbl_TenDangNhap_err.Location = new System.Drawing.Point(0, 5);
             this.lbl_TenDangNhap_err.Name = "lbl_TenDangNhap_err";
             this.lbl_TenDangNhap_err.Size = new System.Drawing.Size(385, 25);

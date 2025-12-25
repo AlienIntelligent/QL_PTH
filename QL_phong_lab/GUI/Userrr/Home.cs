@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using QL_phong_lab.GUI.Userrr.GiaoVien;
+using QL_phong_lab.GUI.Userrr.NhanVien;
 
 namespace QL_phong_lab
 {
@@ -17,9 +19,11 @@ namespace QL_phong_lab
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
+        public static Home Current { get; private set; }
         public Home()
         {
             InitializeComponent();
+            Current = this;
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 65);
             pnl_Menu.Controls.Add(leftBorderBtn);
@@ -37,14 +41,16 @@ namespace QL_phong_lab
                 btn_A.IconChar = IconChar.Dashboard;
                 btn_B.Text = "Duyệt lịch";
                 btn_B.IconChar = IconChar.CalendarDay;
-                btn_C.Text = "Thêm tài khoản mới";
+                btn_C.Text = "Quản Lý Giáo Viên";
                 btn_C.IconChar = IconChar.PeopleGroup;
-                btn_D.Text = "Phân Ca Trực";
+                btn_D.Text = "Quản Lý Nhân Viên";
                 btn_D.IconChar = IconChar.PersonCircleCheck;
-                btn_E.Text = "Xem Lịch";
+                btn_E.Text = "Quản Lý Tài Khoản";
                 btn_E.IconChar = IconChar.Calendar;
                 btn_F.Text = "Xem Phòng";
                 btn_F.IconChar = IconChar.Computer;
+                btn_G.Text = "Quản Lý Ca Trực";
+                btn_G.IconChar = IconChar.Dailymotion;
             }
             else if (role == "Giáo viên")
             {
@@ -54,11 +60,11 @@ namespace QL_phong_lab
                 btn_B.IconChar = IconChar.CalendarDay;
                 btn_C.Text = "Xem Lịch";
                 btn_C.IconChar = IconChar.Calendar;
-                btn_D.Text = "Xem Bản Đăng Ký";
+                btn_D.Text = "Xem Phòng";
                 btn_D.IconChar = IconChar.CalendarAlt;
-                btn_E.Text = "Xem Phòng";
-                btn_E.IconChar = IconChar.Computer;
+                btn_E.Visible = false;
                 btn_F.Visible = false;
+                btn_G.Visible = false;
             }
             else if (role == "Nhân viên")
             {
@@ -67,13 +73,14 @@ namespace QL_phong_lab
                 btn_B.Text = "Chốt Lịch";
                 btn_B.IconChar = IconChar.CalendarDay;
                 btn_C.Text = "Cập Nhật Thiết Bị";
-                btn_C.IconChar = IconChar.Calendar;
+                btn_C.IconChar = IconChar.Computer;
                 btn_D.Text = "Báo Cáo Sự Cố";
                 btn_D.IconChar = IconChar.CalendarAlt;
                 btn_E.Text = "Xem Lịch";
                 btn_E.IconChar = IconChar.Calendar;
-                btn_F.Text = "Xem Phòng";
-                btn_F.IconChar = IconChar.Computer;
+                btn_F.Text = "Xem Ca Trực";
+                btn_F.IconChar = IconChar.Dailymotion;
+                btn_G.Visible = false;
             }
         }
         public void Menu_TheoVaitro(string quyen, string btn_name)
@@ -104,17 +111,21 @@ namespace QL_phong_lab
                     OpenChildForm(new DuyetLich_DanhSach());
                     break;
                 case "btn_C":
-                    OpenChildForm(new TaoTaiKhoanMoi());
+                    OpenChildForm(new QuanLyGiaoVien());
                     break;
                 case "btn_D":
-                    OpenChildForm(new PhanCaTruc());
+                    OpenChildForm(new QuanLyNhanVien());
                     break;
                 case "btn_E":
-                    OpenChildForm(new XemLich());
+                    OpenChildForm(new TaoTaiKhoanMoi());
                     break;
                 case "btn_F":
                     OpenChildForm(new ThongTinPhong());
                     break;
+                case "btn_G":
+                    OpenChildForm(new PhanCaTruc());
+                    break;
+
             }
         }
 
@@ -132,9 +143,6 @@ namespace QL_phong_lab
                     OpenChildForm(new XemLich());
                     break;
                 case "btn_D":
-                    OpenChildForm(new DanhSach_DangKy_GV());
-                    break;
-                case "btn_E":
                     OpenChildForm(new ThongTinPhong());
                     break;
             }
@@ -148,10 +156,10 @@ namespace QL_phong_lab
                     OpenChildForm(new Dashboard());
                     break;
                 case "btn_B":
-                    OpenChildForm(new XepLich());
+                    OpenChildForm(new ChotLich());
                     break;
                 case "btn_C":
-                    OpenChildForm(new CapNhatThongTinPhong());
+                    OpenChildForm(new ThongTinPhong());
                     break;
                 case "btn_D":
                     OpenChildForm(new BaoCao());
@@ -160,11 +168,11 @@ namespace QL_phong_lab
                     OpenChildForm(new XemLich());
                     break;
                 case "btn_F":
-                    OpenChildForm(new CaTruc());
+                    OpenChildForm(new PhanCaTruc());
                     break;
             }
         }
-
+ 
         private void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
@@ -193,6 +201,7 @@ namespace QL_phong_lab
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.FromArgb(0, 255, 255);
         }
 
 
@@ -307,6 +316,17 @@ namespace QL_phong_lab
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
             OpenChildForm(new ThongTinNguoiDung());
+        }
+
+        private void pnl_Desktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_G_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBcolors.color7);
+            Menu_TheoVaitro(PhanQuyenTruyCap.GetVaiTro(DangNhap.vaitro), "btn_G");
         }
     }
 }

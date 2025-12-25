@@ -53,63 +53,74 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BanDangKy.cs" />
+    <Compile Include="BLL\BoMon.cs" />
+    <Compile Include="BLL\CaTrucNV.cs" />
+    <Compile Include="BLL\LichPhongThucHanh.cs" />
     <Compile Include="BLL\LoginInfo.cs" />
+    <Compile Include="BLL\LopHoc.cs" />
+    <Compile Include="BLL\MonHoc.cs" />
+    <Compile Include="BLL\PhongThucHanh.cs" />
+    <Compile Include="BLL\SuCo.cs" />
+    <Compile Include="BLL\ThietBi.cs" />
+    <Compile Include="BLL\ThietBiPhong.cs" />
+    <Compile Include="DAL\Connection.cs" />
+    <Compile Include="DAL\DataProvider.cs" />
+    <Compile Include="BLL\PhanQuyenTruyCap.cs" />
+    <Compile Include="BLL\GiaoVien.cs" />
+    <Compile Include="GUI\Userrr\DashBoarddd\DanhSachLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\DanhSachLop.Designer.cs">
+      <DependentUpon>DanhSachLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\DanhSachBoMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\DanhSachBoMon.Designer.cs">
+      <DependentUpon>DanhSachBoMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\DanhSachMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\DanhSachMonHoc.Designer.cs">
+      <DependentUpon>DanhSachMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\QuanLyPTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\QuanLyPTH.Designer.cs">
+      <DependentUpon>QuanLyPTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\DashBoarddd\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Userrr\Admin\DuyetLich_DanhSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\Admin\DuyetLich_DanhSach.Designer.cs">
+      <DependentUpon>DuyetLich_DanhSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\NhanVien.cs" />
+    <Compile Include="GUI\Userrr\GiaoVien\DatLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\GiaoVien\DatLich.Designer.cs">
+      <DependentUpon>DatLich.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Userrr\NhanVien\ChotLich.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Userrr\NhanVien\ChotLich.Designer.cs">
       <DependentUpon>ChotLich.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Userrr\GiaoVien\ChiTietDangKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\GiaoVien\ChiTietDangKy.Designer.cs">
-      <DependentUpon>ChiTietDangKy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\DataProvider.cs" />
-    <Compile Include="BLL\PhanQuyenTruyCap.cs" />
-    <Compile Include="BLL\GiaoVien.cs" />
-    <Compile Include="GUI\Userrr\GiaoVien\DanhSach_DangKy_GV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\GiaoVien\DanhSach_DangKy_GV.Designer.cs">
-      <DependentUpon>DanhSach_DangKy_GV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\Dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\ThongTinTK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\ThongTinTK.Designer.cs">
-      <DependentUpon>ThongTinTK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\DuyetLich\DuyetLich_Phong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\DuyetLich\DuyetLich_Phong.Designer.cs">
-      <DependentUpon>DuyetLich_Phong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\DuyetLich\DuyetLich_DanhSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\DuyetLich\DuyetLich_DanhSach.Designer.cs">
-      <DependentUpon>DuyetLich_DanhSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BLL\NhanVien.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\NhanVien\CaTruc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\NhanVien\CaTruc.Designer.cs">
-      <DependentUpon>CaTruc.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Userrr\Admin\PhanCaTruc.cs">
       <SubType>Form</SubType>
@@ -117,23 +128,11 @@
     <Compile Include="GUI\Userrr\Admin\PhanCaTruc.Designer.cs">
       <DependentUpon>PhanCaTruc.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Userrr\NhanVien\CapNhatThongTinPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\NhanVien\CapNhatThongTinPhong.Designer.cs">
-      <DependentUpon>CapNhatThongTinPhong.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Userrr\NhanVien\BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Userrr\NhanVien\BaoCao.Designer.cs">
       <DependentUpon>BaoCao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\GiaoVien\DatLich.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\GiaoVien\DatLich.Designer.cs">
-      <DependentUpon>DatLich.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Loginnn\DangNhap.cs">
       <SubType>Form</SubType>
@@ -167,10 +166,10 @@
     <Compile Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.Designer.cs">
       <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Userrr\ThongTinPhong.cs">
+    <Compile Include="GUI\Userrr\NhanVien\ThongTinPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Userrr\ThongTinPhong.Designer.cs">
+    <Compile Include="GUI\Userrr\NhanVien\ThongTinPhong.Designer.cs">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Userrr\XemLich.cs">
@@ -185,27 +184,31 @@
     <Compile Include="GUI\Userrr\ThongTinNguoiDung.Designer.cs">
       <DependentUpon>ThongTinNguoiDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="QL_lichphongthuchanhDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QL_lichphongthuchanhDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Userrr\NhanVien\XepLich.cs">
+    <Compile Include="GUI\Userrr\Admin\QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Userrr\NhanVien\XepLich.Designer.cs">
-      <DependentUpon>XepLich.cs</DependentUpon>
+    <Compile Include="GUI\Userrr\Admin\QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GUI\Userrr\NhanVien\ChotLich.resx">
-      <DependentUpon>ChotLich.cs</DependentUpon>
+    <Compile Include="GUI\Userrr\Admin\QuanLyGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\Admin\QuanLyGiaoVien.Designer.cs">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Userrr\DashBoarddd\DanhSachBoMon.resx">
+      <DependentUpon>DanhSachBoMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\GiaoVien\ChiTietDangKy.resx">
-      <DependentUpon>ChiTietDangKy.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Userrr\DashBoarddd\DanhSachLop.resx">
+      <DependentUpon>DanhSachLop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\GiaoVien\DanhSach_DangKy_GV.resx">
-      <DependentUpon>DanhSach_DangKy_GV.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Userrr\DashBoarddd\DanhSachMonHoc.resx">
+      <DependentUpon>DanhSachMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\Dashboard.resx">
+    <EmbeddedResource Include="GUI\Userrr\DashBoarddd\QuanLyPTH.resx">
+      <DependentUpon>QuanLyPTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Userrr\DashBoarddd\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Loginnn\QuenMatKhau.resx">
@@ -214,20 +217,14 @@
     <EmbeddedResource Include="GUI\Userrr\Admin\PhanCaTruc.resx">
       <DependentUpon>PhanCaTruc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Userrr\GiaoVien\DatLich.resx">
+      <DependentUpon>DatLich.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\NhanVien\BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\NhanVien\CapNhatThongTinPhong.resx">
-      <DependentUpon>CapNhatThongTinPhong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\NhanVien\CaTruc.resx">
-      <DependentUpon>CaTruc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Loginnn\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\GiaoVien\DatLich.resx">
-      <DependentUpon>DatLich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -235,8 +232,8 @@
     <EmbeddedResource Include="GUI\Loginnn\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\NhanVien\XepLich.resx">
-      <DependentUpon>XepLich.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Userrr\NhanVien\ChotLich.resx">
+      <DependentUpon>ChotLich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\ThongTinNguoiDung.resx">
       <DependentUpon>ThongTinNguoiDung.cs</DependentUpon>
@@ -246,23 +243,23 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\Admin\DuyetLich\DuyetLich_DanhSach.resx">
+    <EmbeddedResource Include="GUI\Userrr\Admin\DuyetLich_DanhSach.resx">
       <DependentUpon>DuyetLich_DanhSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\Admin\DuyetLich\DuyetLich_Phong.resx">
-      <DependentUpon>DuyetLich_Phong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.resx">
       <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\Admin\ThongTinTK.resx">
-      <DependentUpon>ThongTinTK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\ThongTinPhong.resx">
+    <EmbeddedResource Include="GUI\Userrr\NhanVien\ThongTinPhong.resx">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\XemLich.resx">
       <DependentUpon>XemLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Userrr\Admin\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Userrr\Admin\QuanLyGiaoVien.resx">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -279,17 +276,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="QL_lichphongthuchanhDataSet.xsc">
-      <DependentUpon>QL_lichphongthuchanhDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QL_lichphongthuchanhDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QL_lichphongthuchanhDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QL_lichphongthuchanhDataSet.xss">
-      <DependentUpon>QL_lichphongthuchanhDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Resources\Huy_Hiệu_Đoàn.png" />
   </ItemGroup>
   <ItemGroup>

@@ -37,7 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_HuongDan = new System.Windows.Forms.Label();
             this.pnl_MatKhau = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_SDT = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbl_MatKhau_err = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -46,6 +46,7 @@
             this.lbl_TenDangNhap_err = new System.Windows.Forms.Label();
             this.txt_TenDangNhap = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_sdt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).BeginInit();
             this.panel1.SuspendLayout();
@@ -67,11 +68,12 @@
             this.btn_QMK.IconColor = System.Drawing.Color.MidnightBlue;
             this.btn_QMK.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_QMK.IconSize = 55;
-            this.btn_QMK.Location = new System.Drawing.Point(432, 476);
+            this.btn_QMK.Location = new System.Drawing.Point(432, 435);
             this.btn_QMK.Name = "btn_QMK";
             this.btn_QMK.Size = new System.Drawing.Size(311, 67);
             this.btn_QMK.TabIndex = 14;
             this.btn_QMK.UseVisualStyleBackColor = false;
+            this.btn_QMK.Click += new System.EventHandler(this.btn_QMK_Click);
             // 
             // pbx_sdt
             // 
@@ -146,7 +148,7 @@
             // 
             this.lbl_HuongDan.AutoSize = true;
             this.lbl_HuongDan.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_HuongDan.ForeColor = System.Drawing.Color.Red;
+            this.lbl_HuongDan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbl_HuongDan.Location = new System.Drawing.Point(191, 20);
             this.lbl_HuongDan.Name = "lbl_HuongDan";
             this.lbl_HuongDan.Size = new System.Drawing.Size(793, 75);
@@ -157,7 +159,7 @@
             // pnl_MatKhau
             // 
             this.pnl_MatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnl_MatKhau.Controls.Add(this.textBox1);
+            this.pnl_MatKhau.Controls.Add(this.txt_SDT);
             this.pnl_MatKhau.Controls.Add(this.panel5);
             this.pnl_MatKhau.Controls.Add(this.panel6);
             this.pnl_MatKhau.Location = new System.Drawing.Point(498, 312);
@@ -165,15 +167,15 @@
             this.pnl_MatKhau.Size = new System.Drawing.Size(438, 75);
             this.pnl_MatKhau.TabIndex = 17;
             // 
-            // textBox1
+            // txt_SDT
             // 
-            this.textBox1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(391, 46);
-            this.textBox1.TabIndex = 5;
+            this.txt_SDT.BackColor = System.Drawing.Color.RoyalBlue;
+            this.txt_SDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_SDT.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SDT.Location = new System.Drawing.Point(3, 2);
+            this.txt_SDT.Name = "txt_SDT";
+            this.txt_SDT.Size = new System.Drawing.Size(391, 46);
+            this.txt_SDT.TabIndex = 5;
             // 
             // panel5
             // 
@@ -187,7 +189,7 @@
             // 
             this.lbl_MatKhau_err.AutoSize = true;
             this.lbl_MatKhau_err.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MatKhau_err.ForeColor = System.Drawing.Color.Red;
+            this.lbl_MatKhau_err.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbl_MatKhau_err.Location = new System.Drawing.Point(0, 5);
             this.lbl_MatKhau_err.Name = "lbl_MatKhau_err";
             this.lbl_MatKhau_err.Size = new System.Drawing.Size(372, 25);
@@ -226,7 +228,7 @@
             // 
             this.lbl_TenDangNhap_err.AutoSize = true;
             this.lbl_TenDangNhap_err.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TenDangNhap_err.ForeColor = System.Drawing.Color.Red;
+            this.lbl_TenDangNhap_err.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbl_TenDangNhap_err.Location = new System.Drawing.Point(0, 5);
             this.lbl_TenDangNhap_err.Name = "lbl_TenDangNhap_err";
             this.lbl_TenDangNhap_err.Size = new System.Drawing.Size(385, 25);
@@ -252,12 +254,28 @@
             this.panel2.Size = new System.Drawing.Size(391, 2);
             this.panel2.TabIndex = 3;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel1.Location = new System.Drawing.Point(488, 505);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(198, 27);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Quay lại đang nhập";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // QuenMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(1174, 688);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pnl_MatKhau);
             this.Controls.Add(this.pnl_TenDangNhap);
             this.Controls.Add(this.panel1);
@@ -268,6 +286,7 @@
             this.Controls.Add(this.lbl_TaiKhoan_QMK);
             this.Name = "QuenMatKhau";
             this.Text = "QuenMatKhau";
+            this.Load += new System.EventHandler(this.QuenMatKhau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_sdt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -294,7 +313,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_HuongDan;
         private System.Windows.Forms.Panel pnl_MatKhau;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_SDT;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lbl_MatKhau_err;
         private System.Windows.Forms.Panel panel6;
@@ -303,5 +322,6 @@
         private System.Windows.Forms.Label lbl_TenDangNhap_err;
         private System.Windows.Forms.TextBox txt_TenDangNhap;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

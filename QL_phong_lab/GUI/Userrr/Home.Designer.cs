@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.pnl_Menu = new System.Windows.Forms.Panel();
+            this.btn_G = new FontAwesome.Sharp.IconButton();
             this.btn_F = new FontAwesome.Sharp.IconButton();
             this.btn_E = new FontAwesome.Sharp.IconButton();
             this.btn_D = new FontAwesome.Sharp.IconButton();
@@ -53,6 +54,7 @@
             // pnl_Menu
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.DarkBlue;
+            this.pnl_Menu.Controls.Add(this.btn_G);
             this.pnl_Menu.Controls.Add(this.btn_F);
             this.pnl_Menu.Controls.Add(this.btn_E);
             this.pnl_Menu.Controls.Add(this.btn_D);
@@ -65,6 +67,25 @@
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Size = new System.Drawing.Size(288, 844);
             this.pnl_Menu.TabIndex = 0;
+            // 
+            // btn_G
+            // 
+            this.btn_G.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_G.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_G.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_G.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_G.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btn_G.IconChar = FontAwesome.Sharp.IconChar.Rocket;
+            this.btn_G.IconColor = System.Drawing.Color.GhostWhite;
+            this.btn_G.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_G.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_G.Location = new System.Drawing.Point(0, 670);
+            this.btn_G.Name = "btn_G";
+            this.btn_G.Size = new System.Drawing.Size(288, 65);
+            this.btn_G.TabIndex = 7;
+            this.btn_G.Text = "COMING SOON";
+            this.btn_G.UseVisualStyleBackColor = false;
+            this.btn_G.Click += new System.EventHandler(this.btn_G_Click);
             // 
             // btn_F
             // 
@@ -275,6 +296,7 @@
             this.pnl_Desktop.Name = "pnl_Desktop";
             this.pnl_Desktop.Size = new System.Drawing.Size(1190, 745);
             this.pnl_Desktop.TabIndex = 3;
+            this.pnl_Desktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Desktop_Paint);
             // 
             // Home
             // 
@@ -306,7 +328,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnl_Desktop;
         private System.Windows.Forms.Label lbl_NguoiDung;
         private FontAwesome.Sharp.IconButton btn_F;
         private FontAwesome.Sharp.IconButton btn_E;
@@ -315,6 +336,8 @@
         private FontAwesome.Sharp.IconButton btn_B;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btn_thongbao;
+        private FontAwesome.Sharp.IconButton btn_G;
+        public System.Windows.Forms.Panel pnl_Desktop;
     }
 }
 

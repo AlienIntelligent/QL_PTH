@@ -11,30 +11,22 @@ using System.Windows.Forms;
 
 namespace QL_phong_lab
 {
-    public partial class PhanCaTruc : Form
+    public partial class ThongTinPhong : Form
     {
-        
-        public PhanCaTruc()
+        public ThongTinPhong()
         {
             InitializeComponent();
         }
 
-        private void PhanCaTruc_Load(object sender, EventArgs e)
+        private void ThongTinPhong_Load(object sender, EventArgs e)
         {
             try
             {
-                dtv_Catruc.DataSource = new CaTrucNV().TableCaTruc("SELECT * from CaTrucNhanVien");
+                dtv_Thietbi.DataSource = new ThietBiPhong().TableThietBiPhong("SELECT * from ThietBiPhong");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading data: " + ex.Message);
-            }
-
-            if (DangNhap.vaitro == "Giáo viên" || DangNhap.vaitro == "Nhân viên")
-            {
-                btn_suaCatruc.Visible = false;
-                btn_xoaCatruc.Visible = false;
-                btn_themCatruc.Visible = false;
             }
         }
     }
