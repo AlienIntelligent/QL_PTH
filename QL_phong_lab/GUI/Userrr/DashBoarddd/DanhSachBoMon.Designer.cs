@@ -32,26 +32,26 @@
             this.lbl_GiaoVien = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_chuyenMon = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.btn_xoa = new FontAwesome.Sharp.IconButton();
+            this.btn_sua = new FontAwesome.Sharp.IconButton();
+            this.btn_them = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gr_timkiem = new System.Windows.Forms.GroupBox();
-            this.cbx_tenGiaovien = new System.Windows.Forms.ComboBox();
+            this.cbx_tenBoMon = new System.Windows.Forms.ComboBox();
             this.lbl_tenNhanvien = new System.Windows.Forms.Label();
-            this.cbx_maGiaovien = new System.Windows.Forms.ComboBox();
+            this.cbx_maBoMon = new System.Windows.Forms.ComboBox();
             this.lbl_maGiaovien = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dtv_Bomon = new System.Windows.Forms.DataGridView();
+            this.dtv_boMon = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.gr_timkiem.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_Bomon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_boMon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,11 +87,11 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_chuyenMon);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.iconButton3);
-            this.groupBox2.Controls.Add(this.iconButton4);
-            this.groupBox2.Controls.Add(this.iconButton5);
+            this.groupBox2.Controls.Add(this.btn_xoa);
+            this.groupBox2.Controls.Add(this.btn_sua);
+            this.groupBox2.Controls.Add(this.btn_them);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.MintCream;
             this.groupBox2.Location = new System.Drawing.Point(9, 5);
@@ -101,12 +101,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin";
             // 
-            // textBox4
+            // txt_chuyenMon
             // 
-            this.textBox4.Location = new System.Drawing.Point(144, 156);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 35);
-            this.textBox4.TabIndex = 19;
+            this.txt_chuyenMon.Location = new System.Drawing.Point(144, 156);
+            this.txt_chuyenMon.Name = "txt_chuyenMon";
+            this.txt_chuyenMon.Size = new System.Drawing.Size(218, 35);
+            this.txt_chuyenMon.TabIndex = 19;
             // 
             // label4
             // 
@@ -118,47 +118,50 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Chuyên môn";
             // 
-            // iconButton3
+            // btn_xoa
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(281, 417);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(81, 48);
-            this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "Xóa";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.btn_xoa.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_xoa.IconColor = System.Drawing.Color.Black;
+            this.btn_xoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_xoa.Location = new System.Drawing.Point(281, 417);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(81, 48);
+            this.btn_xoa.TabIndex = 2;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // iconButton4
+            // btn_sua
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(159, 417);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(81, 48);
-            this.iconButton4.TabIndex = 1;
-            this.iconButton4.Text = "Sửa";
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.btn_sua.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sua.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_sua.IconColor = System.Drawing.Color.Black;
+            this.btn_sua.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_sua.Location = new System.Drawing.Point(159, 417);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(81, 48);
+            this.btn_sua.TabIndex = 1;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // iconButton5
+            // btn_them
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(36, 417);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(81, 48);
-            this.iconButton5.TabIndex = 0;
-            this.iconButton5.Text = "Thêm";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.btn_them.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_them.IconColor = System.Drawing.Color.Black;
+            this.btn_them.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_them.Location = new System.Drawing.Point(36, 417);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(81, 48);
+            this.btn_them.TabIndex = 0;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel3
             // 
@@ -173,9 +176,9 @@
             // gr_timkiem
             // 
             this.gr_timkiem.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gr_timkiem.Controls.Add(this.cbx_tenGiaovien);
+            this.gr_timkiem.Controls.Add(this.cbx_tenBoMon);
             this.gr_timkiem.Controls.Add(this.lbl_tenNhanvien);
-            this.gr_timkiem.Controls.Add(this.cbx_maGiaovien);
+            this.gr_timkiem.Controls.Add(this.cbx_maBoMon);
             this.gr_timkiem.Controls.Add(this.lbl_maGiaovien);
             this.gr_timkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gr_timkiem.ForeColor = System.Drawing.Color.MintCream;
@@ -186,13 +189,14 @@
             this.gr_timkiem.TabStop = false;
             this.gr_timkiem.Text = "Tìm Kiếm";
             // 
-            // cbx_tenGiaovien
+            // cbx_tenBoMon
             // 
-            this.cbx_tenGiaovien.FormattingEnabled = true;
-            this.cbx_tenGiaovien.Location = new System.Drawing.Point(509, 46);
-            this.cbx_tenGiaovien.Name = "cbx_tenGiaovien";
-            this.cbx_tenGiaovien.Size = new System.Drawing.Size(121, 35);
-            this.cbx_tenGiaovien.TabIndex = 8;
+            this.cbx_tenBoMon.FormattingEnabled = true;
+            this.cbx_tenBoMon.Location = new System.Drawing.Point(509, 46);
+            this.cbx_tenBoMon.Name = "cbx_tenBoMon";
+            this.cbx_tenBoMon.Size = new System.Drawing.Size(121, 35);
+            this.cbx_tenBoMon.TabIndex = 8;
+            this.cbx_tenBoMon.SelectedIndexChanged += new System.EventHandler(this.cbx_tenBoMon_SelectedIndexChanged);
             // 
             // lbl_tenNhanvien
             // 
@@ -204,13 +208,14 @@
             this.lbl_tenNhanvien.TabIndex = 7;
             this.lbl_tenNhanvien.Text = "Tên bộ môn";
             // 
-            // cbx_maGiaovien
+            // cbx_maBoMon
             // 
-            this.cbx_maGiaovien.FormattingEnabled = true;
-            this.cbx_maGiaovien.Location = new System.Drawing.Point(193, 46);
-            this.cbx_maGiaovien.Name = "cbx_maGiaovien";
-            this.cbx_maGiaovien.Size = new System.Drawing.Size(121, 35);
-            this.cbx_maGiaovien.TabIndex = 6;
+            this.cbx_maBoMon.FormattingEnabled = true;
+            this.cbx_maBoMon.Location = new System.Drawing.Point(193, 46);
+            this.cbx_maBoMon.Name = "cbx_maBoMon";
+            this.cbx_maBoMon.Size = new System.Drawing.Size(121, 35);
+            this.cbx_maBoMon.TabIndex = 6;
+            this.cbx_maBoMon.SelectedIndexChanged += new System.EventHandler(this.cbx_maBoMon_SelectedIndexChanged);
             // 
             // lbl_maGiaovien
             // 
@@ -225,23 +230,24 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel4.Controls.Add(this.dtv_Bomon);
+            this.panel4.Controls.Add(this.dtv_boMon);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 170);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(761, 519);
             this.panel4.TabIndex = 5;
             // 
-            // dtv_Bomon
+            // dtv_boMon
             // 
-            this.dtv_Bomon.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.dtv_Bomon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_Bomon.Location = new System.Drawing.Point(9, 5);
-            this.dtv_Bomon.Name = "dtv_Bomon";
-            this.dtv_Bomon.RowHeadersWidth = 62;
-            this.dtv_Bomon.RowTemplate.Height = 28;
-            this.dtv_Bomon.Size = new System.Drawing.Size(743, 509);
-            this.dtv_Bomon.TabIndex = 2;
+            this.dtv_boMon.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.dtv_boMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_boMon.Location = new System.Drawing.Point(9, 5);
+            this.dtv_boMon.Name = "dtv_boMon";
+            this.dtv_boMon.RowHeadersWidth = 62;
+            this.dtv_boMon.RowTemplate.Height = 28;
+            this.dtv_boMon.Size = new System.Drawing.Size(743, 509);
+            this.dtv_boMon.TabIndex = 2;
+            this.dtv_boMon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_boMon_CellClick);
             // 
             // DanhSachBoMon
             // 
@@ -264,7 +270,7 @@
             this.gr_timkiem.ResumeLayout(false);
             this.gr_timkiem.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_Bomon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_boMon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,18 +281,18 @@
         private System.Windows.Forms.Label lbl_GiaoVien;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btn_xoa;
+        private FontAwesome.Sharp.IconButton btn_sua;
+        private FontAwesome.Sharp.IconButton btn_them;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox gr_timkiem;
-        private System.Windows.Forms.ComboBox cbx_tenGiaovien;
+        private System.Windows.Forms.ComboBox cbx_tenBoMon;
         private System.Windows.Forms.Label lbl_tenNhanvien;
-        private System.Windows.Forms.ComboBox cbx_maGiaovien;
+        private System.Windows.Forms.ComboBox cbx_maBoMon;
         private System.Windows.Forms.Label lbl_maGiaovien;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dtv_Bomon;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DataGridView dtv_boMon;
+        private System.Windows.Forms.TextBox txt_chuyenMon;
         private System.Windows.Forms.Label label4;
     }
 }

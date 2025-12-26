@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_DS_duyet = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.btn_capnhatTT = new FontAwesome.Sharp.IconButton();
+            this.btn_huy = new FontAwesome.Sharp.IconButton();
+            this.txt_trangthai = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_hocky = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_namhoc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_tietKT = new System.Windows.Forms.TextBox();
+            this.txt_ngayKT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_Bomon = new System.Windows.Forms.TextBox();
+            this.txt_thu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_tietBD = new System.Windows.Forms.TextBox();
+            this.txt_ngayBD = new System.Windows.Forms.TextBox();
+            this.txt_mon = new System.Windows.Forms.TextBox();
+            this.txt_lop = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -68,9 +68,6 @@
             this.lbl_maGiaovien = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtv_LichSD = new System.Windows.Forms.DataGridView();
-            this.dtp_ngayKetThuc = new System.Windows.Forms.DateTimePicker();
-            this.txt_TietBatDau = new System.Windows.Forms.TextBox();
-            this.txt_TietKetThuc = new System.Windows.Forms.TextBox();
             this.pnl_DS_duyet.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnl_Title_duyet_DS.SuspendLayout();
@@ -93,24 +90,24 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.Controls.Add(this.iconButton2);
-            this.groupBox2.Controls.Add(this.iconButton1);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.btn_capnhatTT);
+            this.groupBox2.Controls.Add(this.btn_huy);
+            this.groupBox2.Controls.Add(this.txt_trangthai);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.txt_hocky);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txt_namhoc);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txt_tietKT);
+            this.groupBox2.Controls.Add(this.txt_ngayKT);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txt_Bomon);
+            this.groupBox2.Controls.Add(this.txt_thu);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_tietBD);
+            this.groupBox2.Controls.Add(this.txt_ngayBD);
+            this.groupBox2.Controls.Add(this.txt_mon);
+            this.groupBox2.Controls.Add(this.txt_lop);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
@@ -125,42 +122,43 @@
             this.groupBox2.Text = "Thông Tin";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // iconButton2
+            // btn_capnhatTT
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(47, 435);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(206, 48);
-            this.iconButton2.TabIndex = 29;
-            this.iconButton2.Text = "Cập nhật trạng thái";
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.btn_capnhatTT.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_capnhatTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_capnhatTT.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btn_capnhatTT.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_capnhatTT.IconColor = System.Drawing.Color.Black;
+            this.btn_capnhatTT.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_capnhatTT.Location = new System.Drawing.Point(47, 435);
+            this.btn_capnhatTT.Name = "btn_capnhatTT";
+            this.btn_capnhatTT.Size = new System.Drawing.Size(206, 48);
+            this.btn_capnhatTT.TabIndex = 29;
+            this.btn_capnhatTT.Text = "Cập nhật trạng thái";
+            this.btn_capnhatTT.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
+            // btn_huy
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(47, 509);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(109, 48);
-            this.iconButton1.TabIndex = 28;
-            this.iconButton1.Text = "Hủy lịch";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btn_huy.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_huy.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btn_huy.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_huy.IconColor = System.Drawing.Color.Black;
+            this.btn_huy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_huy.Location = new System.Drawing.Point(47, 509);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(109, 48);
+            this.btn_huy.TabIndex = 28;
+            this.btn_huy.Text = "Hủy lịch";
+            this.btn_huy.UseVisualStyleBackColor = false;
+            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
             // 
-            // textBox9
+            // txt_trangthai
             // 
-            this.textBox9.Location = new System.Drawing.Point(218, 365);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(121, 35);
-            this.textBox9.TabIndex = 27;
+            this.txt_trangthai.Location = new System.Drawing.Point(218, 365);
+            this.txt_trangthai.Name = "txt_trangthai";
+            this.txt_trangthai.Size = new System.Drawing.Size(121, 35);
+            this.txt_trangthai.TabIndex = 27;
             // 
             // label10
             // 
@@ -172,12 +170,12 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Trạng thái";
             // 
-            // textBox7
+            // txt_hocky
             // 
-            this.textBox7.Location = new System.Drawing.Point(286, 47);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(82, 35);
-            this.textBox7.TabIndex = 25;
+            this.txt_hocky.Location = new System.Drawing.Point(286, 47);
+            this.txt_hocky.Name = "txt_hocky";
+            this.txt_hocky.Size = new System.Drawing.Size(82, 35);
+            this.txt_hocky.TabIndex = 25;
             // 
             // label8
             // 
@@ -189,12 +187,12 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Học kỳ";
             // 
-            // textBox8
+            // txt_namhoc
             // 
-            this.textBox8.Location = new System.Drawing.Point(99, 47);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 35);
-            this.textBox8.TabIndex = 23;
+            this.txt_namhoc.Location = new System.Drawing.Point(99, 47);
+            this.txt_namhoc.Name = "txt_namhoc";
+            this.txt_namhoc.Size = new System.Drawing.Size(100, 35);
+            this.txt_namhoc.TabIndex = 23;
             // 
             // label9
             // 
@@ -206,19 +204,19 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Năm học";
             // 
-            // textBox6
+            // txt_tietKT
             // 
-            this.textBox6.Location = new System.Drawing.Point(239, 312);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 35);
-            this.textBox6.TabIndex = 21;
+            this.txt_tietKT.Location = new System.Drawing.Point(239, 312);
+            this.txt_tietKT.Name = "txt_tietKT";
+            this.txt_tietKT.Size = new System.Drawing.Size(100, 35);
+            this.txt_tietKT.TabIndex = 21;
             // 
-            // textBox5
+            // txt_ngayKT
             // 
-            this.textBox5.Location = new System.Drawing.Point(239, 256);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 35);
-            this.textBox5.TabIndex = 20;
+            this.txt_ngayKT.Location = new System.Drawing.Point(239, 256);
+            this.txt_ngayKT.Name = "txt_ngayKT";
+            this.txt_ngayKT.Size = new System.Drawing.Size(100, 35);
+            this.txt_ngayKT.TabIndex = 20;
             // 
             // label7
             // 
@@ -240,12 +238,12 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "đến";
             // 
-            // txt_Bomon
+            // txt_thu
             // 
-            this.txt_Bomon.Location = new System.Drawing.Point(218, 202);
-            this.txt_Bomon.Name = "txt_Bomon";
-            this.txt_Bomon.Size = new System.Drawing.Size(121, 35);
-            this.txt_Bomon.TabIndex = 17;
+            this.txt_thu.Location = new System.Drawing.Point(218, 202);
+            this.txt_thu.Name = "txt_thu";
+            this.txt_thu.Size = new System.Drawing.Size(121, 35);
+            this.txt_thu.TabIndex = 17;
             // 
             // label5
             // 
@@ -257,33 +255,33 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Thứ trong tuần";
             // 
-            // textBox1
+            // txt_tietBD
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 312);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 35);
-            this.textBox1.TabIndex = 14;
+            this.txt_tietBD.Location = new System.Drawing.Point(89, 312);
+            this.txt_tietBD.Name = "txt_tietBD";
+            this.txt_tietBD.Size = new System.Drawing.Size(100, 35);
+            this.txt_tietBD.TabIndex = 14;
             // 
-            // textBox2
+            // txt_ngayBD
             // 
-            this.textBox2.Location = new System.Drawing.Point(89, 256);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 35);
-            this.textBox2.TabIndex = 13;
+            this.txt_ngayBD.Location = new System.Drawing.Point(89, 256);
+            this.txt_ngayBD.Name = "txt_ngayBD";
+            this.txt_ngayBD.Size = new System.Drawing.Size(100, 35);
+            this.txt_ngayBD.TabIndex = 13;
             // 
-            // textBox3
+            // txt_mon
             // 
-            this.textBox3.Location = new System.Drawing.Point(218, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 35);
-            this.textBox3.TabIndex = 12;
+            this.txt_mon.Location = new System.Drawing.Point(218, 149);
+            this.txt_mon.Name = "txt_mon";
+            this.txt_mon.Size = new System.Drawing.Size(121, 35);
+            this.txt_mon.TabIndex = 12;
             // 
-            // textBox4
+            // txt_lop
             // 
-            this.textBox4.Location = new System.Drawing.Point(218, 97);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 35);
-            this.textBox4.TabIndex = 11;
+            this.txt_lop.Location = new System.Drawing.Point(218, 97);
+            this.txt_lop.Name = "txt_lop";
+            this.txt_lop.Size = new System.Drawing.Size(121, 35);
+            this.txt_lop.TabIndex = 11;
             // 
             // label2
             // 
@@ -381,6 +379,7 @@
             this.dtp_ngay.Name = "dtp_ngay";
             this.dtp_ngay.Size = new System.Drawing.Size(161, 35);
             this.dtp_ngay.TabIndex = 11;
+            this.dtp_ngay.ValueChanged += new System.EventHandler(this.dtp_ngay_ValueChanged);
             // 
             // cbx_phong
             // 
@@ -442,44 +441,44 @@
             // 
             // dtv_LichSD
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Yellow;
-            this.dtv_LichSD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Yellow;
+            this.dtv_LichSD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtv_LichSD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtv_LichSD.BackgroundColor = System.Drawing.Color.DodgerBlue;
             this.dtv_LichSD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtv_LichSD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_LichSD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_LichSD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtv_LichSD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtv_LichSD.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtv_LichSD.DefaultCellStyle = dataGridViewCellStyle7;
             this.dtv_LichSD.GridColor = System.Drawing.Color.DodgerBlue;
             this.dtv_LichSD.Location = new System.Drawing.Point(3, 4);
             this.dtv_LichSD.Name = "dtv_LichSD";
             this.dtv_LichSD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_LichSD.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_LichSD.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtv_LichSD.RowHeadersWidth = 62;
             this.dtv_LichSD.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.DodgerBlue;
             this.dtv_LichSD.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -489,30 +488,6 @@
             this.dtv_LichSD.Size = new System.Drawing.Size(773, 530);
             this.dtv_LichSD.TabIndex = 1;
             this.dtv_LichSD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_LichSD_CellClick);
-            // 
-            // dtp_ngayKetThuc
-            // 
-            this.dtp_ngayKetThuc.Location = new System.Drawing.Point(339, 86);
-            this.dtp_ngayKetThuc.Name = "dtp_ngayKetThuc";
-            this.dtp_ngayKetThuc.Size = new System.Drawing.Size(161, 35);
-            this.dtp_ngayKetThuc.TabIndex = 12;
-            this.gr_timkiem.Controls.Add(this.dtp_ngayKetThuc);
-            // 
-            // txt_TietBatDau
-            // 
-            this.txt_TietBatDau.Location = new System.Drawing.Point(116, 86);
-            this.txt_TietBatDau.Name = "txt_TietBatDau";
-            this.txt_TietBatDau.Size = new System.Drawing.Size(97, 35);
-            this.txt_TietBatDau.TabIndex = 13;
-            this.gr_timkiem.Controls.Add(this.txt_TietBatDau);
-            // 
-            // txt_TietKetThuc
-            // 
-            this.txt_TietKetThuc.Location = new System.Drawing.Point(629, 86);
-            this.txt_TietKetThuc.Name = "txt_TietKetThuc";
-            this.txt_TietKetThuc.Size = new System.Drawing.Size(102, 35);
-            this.txt_TietKetThuc.TabIndex = 14;
-            this.gr_timkiem.Controls.Add(this.txt_TietKetThuc);
             // 
             // XemLich
             // 
@@ -555,31 +530,28 @@
         private System.Windows.Forms.ComboBox cbx_Giaovien;
         private System.Windows.Forms.Label lbl_maGiaovien;
         private System.Windows.Forms.GroupBox groupBox2;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.TextBox textBox9;
+        private FontAwesome.Sharp.IconButton btn_capnhatTT;
+        private FontAwesome.Sharp.IconButton btn_huy;
+        private System.Windows.Forms.TextBox txt_trangthai;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_hocky;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_namhoc;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_tietKT;
+        private System.Windows.Forms.TextBox txt_ngayKT;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_Bomon;
+        private System.Windows.Forms.TextBox txt_thu;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_tietBD;
+        private System.Windows.Forms.TextBox txt_ngayBD;
+        private System.Windows.Forms.TextBox txt_mon;
+        private System.Windows.Forms.TextBox txt_lop;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dtv_LichSD;
-        private System.Windows.Forms.DateTimePicker dtp_ngayKetThuc;
-        private System.Windows.Forms.TextBox txt_TietBatDau;
-        private System.Windows.Forms.TextBox txt_TietKetThuc;
     }
 }

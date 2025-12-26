@@ -44,14 +44,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.btn_them = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_namhoc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pnl_Title_duyet_DS = new System.Windows.Forms.Panel();
             this.lbl_DS_duyet = new System.Windows.Forms.Label();
@@ -99,14 +99,14 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.iconButton3);
             this.groupBox2.Controls.Add(this.iconButton4);
-            this.groupBox2.Controls.Add(this.iconButton5);
+            this.groupBox2.Controls.Add(this.btn_them);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txt_namhoc);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.MintCream;
@@ -247,19 +247,20 @@
             this.iconButton4.Text = "Sửa";
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
+            // btn_them
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(34, 488);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(81, 48);
-            this.iconButton5.TabIndex = 32;
-            this.iconButton5.Text = "Thêm";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.btn_them.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_them.IconColor = System.Drawing.Color.Black;
+            this.btn_them.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_them.Location = new System.Drawing.Point(34, 488);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(81, 48);
+            this.btn_them.TabIndex = 32;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // textBox1
             // 
@@ -312,12 +313,12 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Học kỳ";
             // 
-            // textBox8
+            // txt_namhoc
             // 
-            this.textBox8.Location = new System.Drawing.Point(99, 47);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 35);
-            this.textBox8.TabIndex = 23;
+            this.txt_namhoc.Location = new System.Drawing.Point(99, 47);
+            this.txt_namhoc.Name = "txt_namhoc";
+            this.txt_namhoc.Size = new System.Drawing.Size(100, 35);
+            this.txt_namhoc.TabIndex = 23;
             // 
             // label9
             // 
@@ -479,7 +480,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_namhoc;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
@@ -498,6 +499,6 @@
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btn_them;
     }
 }

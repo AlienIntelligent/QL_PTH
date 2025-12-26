@@ -1,12 +1,7 @@
 ﻿using QL_phong_lab.DAL;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QL_phong_lab
 {
@@ -19,6 +14,8 @@ namespace QL_phong_lab
         public string SoDienThoai { get; set; }
         public string Email { get; set; }
 
+        public NhanVien() { }
+
         public NhanVien(string hoTen, string ngaySinh, string gioiTinh, string soDienThoai, string email, string maNV)
         {
             HoTen = hoTen;
@@ -29,11 +26,9 @@ namespace QL_phong_lab
             MaNhanVien = maNV;
         }
 
-        public NhanVien()
-        {
-        }
         SqlDataAdapter dataAdapter;
         SqlCommand sqlCommand;
+
         public DataTable TableNV(string query)
         {
             DataTable dt = new DataTable();
@@ -55,6 +50,88 @@ namespace QL_phong_lab
                 sqlCommand = new SqlCommand(query, conn);
                 sqlCommand.ExecuteNonQuery();
                 DataProvider.CloseConnection();
+            }
+        }
+
+        public bool ThemNhanVien(string maNV, string hoTen, DateTime ngaySinh, string gioiTinh, string soDT, string email)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+                {
+                    conn.Open();
+                    string query = @"INSERT INTO NhanVien (MaNhanVien, HoTen, NgaySinh, GioiTinh, SoDienThoai, Email)
+                             VALUES (@MaNhanVien, @HoTen, @NgaySinh, @GioiTinh, @SoDienThoai, @Email)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@MaNhanVien", maNV.Trim());
+                        cmd.Parameters.AddWithValue("@HoTen", hoTen ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@NgaySinh", ngaySinh);
+                        cmd.Parameters.AddWithValue("@GioiTinh", gioiTinh ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@SoDienThoai", soDT ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@Email", email ?? (object)DBNull.Value);
+
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool SuaNhanVien(string maNV, string hoTen, DateTime ngaySinh, string gioiTinh, string soDT, string email)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+                {
+                    conn.Open();
+                    string query = @"UPDATE NhanVien
+                             SET HoTen = @HoTen,
+                                 NgaySinh = @NgaySinh,
+                                 GioiTinh = @GioiTinh,
+                                 SoDienThoai = @SoDienThoai,
+                                 Email = @Email
+                             WHERE MaNhanVien = @MaNhanVien";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@MaNhanVien", maNV.Trim());
+                        cmd.Parameters.AddWithValue("@HoTen", hoTen ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@NgaySinh", ngaySinh);
+                        cmd.Parameters.AddWithValue("@GioiTinh", gioiTinh ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@SoDienThoai", soDT ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@Email", email ?? (object)DBNull.Value);
+
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool XoaNhanVien(string maNV)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@MaNhanVien", maNV.Trim());
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch
+            {
+                return false;
             }
         }
     }

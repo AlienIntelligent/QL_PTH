@@ -32,20 +32,20 @@
             this.lbl_GiaoVien = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_quanSo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_sdt = new System.Windows.Forms.TextBox();
+            this.txt_lopTruong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.btn_xoa = new FontAwesome.Sharp.IconButton();
+            this.btn_sua = new FontAwesome.Sharp.IconButton();
+            this.btn_them = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gr_timkiem = new System.Windows.Forms.GroupBox();
-            this.cbx_tenGiaovien = new System.Windows.Forms.ComboBox();
+            this.cbx_tenLop = new System.Windows.Forms.ComboBox();
             this.lbl_tenNhanvien = new System.Windows.Forms.Label();
-            this.cbx_maGiaovien = new System.Windows.Forms.ComboBox();
+            this.cbx_maLop = new System.Windows.Forms.ComboBox();
             this.lbl_maGiaovien = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dtv_Lop = new System.Windows.Forms.DataGridView();
@@ -91,15 +91,15 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txt_quanSo);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_sdt);
+            this.groupBox2.Controls.Add(this.txt_lopTruong);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.iconButton3);
-            this.groupBox2.Controls.Add(this.iconButton4);
-            this.groupBox2.Controls.Add(this.iconButton5);
+            this.groupBox2.Controls.Add(this.btn_xoa);
+            this.groupBox2.Controls.Add(this.btn_sua);
+            this.groupBox2.Controls.Add(this.btn_them);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.MintCream;
             this.groupBox2.Location = new System.Drawing.Point(9, 5);
@@ -109,12 +109,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin";
             // 
-            // textBox9
+            // txt_quanSo
             // 
-            this.textBox9.Location = new System.Drawing.Point(224, 298);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(121, 35);
-            this.textBox9.TabIndex = 35;
+            this.txt_quanSo.Location = new System.Drawing.Point(224, 298);
+            this.txt_quanSo.Name = "txt_quanSo";
+            this.txt_quanSo.Size = new System.Drawing.Size(121, 35);
+            this.txt_quanSo.TabIndex = 35;
             // 
             // label10
             // 
@@ -126,19 +126,19 @@
             this.label10.TabIndex = 34;
             this.label10.Text = "Quân số";
             // 
-            // textBox3
+            // txt_sdt
             // 
-            this.textBox3.Location = new System.Drawing.Point(224, 195);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 35);
-            this.textBox3.TabIndex = 33;
+            this.txt_sdt.Location = new System.Drawing.Point(224, 195);
+            this.txt_sdt.Name = "txt_sdt";
+            this.txt_sdt.Size = new System.Drawing.Size(121, 35);
+            this.txt_sdt.TabIndex = 33;
             // 
-            // textBox4
+            // txt_lopTruong
             // 
-            this.textBox4.Location = new System.Drawing.Point(224, 95);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 35);
-            this.textBox4.TabIndex = 32;
+            this.txt_lopTruong.Location = new System.Drawing.Point(224, 95);
+            this.txt_lopTruong.Name = "txt_lopTruong";
+            this.txt_lopTruong.Size = new System.Drawing.Size(121, 35);
+            this.txt_lopTruong.TabIndex = 32;
             // 
             // label3
             // 
@@ -160,47 +160,50 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "Lớp trưởng";
             // 
-            // iconButton3
+            // btn_xoa
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(281, 424);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(81, 48);
-            this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "Xóa";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.btn_xoa.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_xoa.IconColor = System.Drawing.Color.Black;
+            this.btn_xoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_xoa.Location = new System.Drawing.Point(281, 424);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(81, 48);
+            this.btn_xoa.TabIndex = 2;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // iconButton4
+            // btn_sua
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(159, 424);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(81, 48);
-            this.iconButton4.TabIndex = 1;
-            this.iconButton4.Text = "Sửa";
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.btn_sua.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sua.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_sua.IconColor = System.Drawing.Color.Black;
+            this.btn_sua.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_sua.Location = new System.Drawing.Point(159, 424);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(81, 48);
+            this.btn_sua.TabIndex = 1;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // iconButton5
+            // btn_them
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(36, 424);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(81, 48);
-            this.iconButton5.TabIndex = 0;
-            this.iconButton5.Text = "Thêm";
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.btn_them.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_them.IconColor = System.Drawing.Color.Black;
+            this.btn_them.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_them.Location = new System.Drawing.Point(36, 424);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(81, 48);
+            this.btn_them.TabIndex = 0;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel3
             // 
@@ -215,9 +218,9 @@
             // gr_timkiem
             // 
             this.gr_timkiem.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gr_timkiem.Controls.Add(this.cbx_tenGiaovien);
+            this.gr_timkiem.Controls.Add(this.cbx_tenLop);
             this.gr_timkiem.Controls.Add(this.lbl_tenNhanvien);
-            this.gr_timkiem.Controls.Add(this.cbx_maGiaovien);
+            this.gr_timkiem.Controls.Add(this.cbx_maLop);
             this.gr_timkiem.Controls.Add(this.lbl_maGiaovien);
             this.gr_timkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gr_timkiem.ForeColor = System.Drawing.Color.MintCream;
@@ -228,13 +231,13 @@
             this.gr_timkiem.TabStop = false;
             this.gr_timkiem.Text = "Tìm Kiếm";
             // 
-            // cbx_tenGiaovien
+            // cbx_tenLop
             // 
-            this.cbx_tenGiaovien.FormattingEnabled = true;
-            this.cbx_tenGiaovien.Location = new System.Drawing.Point(509, 46);
-            this.cbx_tenGiaovien.Name = "cbx_tenGiaovien";
-            this.cbx_tenGiaovien.Size = new System.Drawing.Size(121, 35);
-            this.cbx_tenGiaovien.TabIndex = 8;
+            this.cbx_tenLop.FormattingEnabled = true;
+            this.cbx_tenLop.Location = new System.Drawing.Point(509, 46);
+            this.cbx_tenLop.Name = "cbx_tenLop";
+            this.cbx_tenLop.Size = new System.Drawing.Size(121, 35);
+            this.cbx_tenLop.TabIndex = 8;
             // 
             // lbl_tenNhanvien
             // 
@@ -246,13 +249,13 @@
             this.lbl_tenNhanvien.TabIndex = 7;
             this.lbl_tenNhanvien.Text = "Tên lớp";
             // 
-            // cbx_maGiaovien
+            // cbx_maLop
             // 
-            this.cbx_maGiaovien.FormattingEnabled = true;
-            this.cbx_maGiaovien.Location = new System.Drawing.Point(193, 46);
-            this.cbx_maGiaovien.Name = "cbx_maGiaovien";
-            this.cbx_maGiaovien.Size = new System.Drawing.Size(121, 35);
-            this.cbx_maGiaovien.TabIndex = 6;
+            this.cbx_maLop.FormattingEnabled = true;
+            this.cbx_maLop.Location = new System.Drawing.Point(193, 46);
+            this.cbx_maLop.Name = "cbx_maLop";
+            this.cbx_maLop.Size = new System.Drawing.Size(121, 35);
+            this.cbx_maLop.TabIndex = 6;
             // 
             // lbl_maGiaovien
             // 
@@ -284,6 +287,7 @@
             this.dtv_Lop.RowTemplate.Height = 28;
             this.dtv_Lop.Size = new System.Drawing.Size(743, 509);
             this.dtv_Lop.TabIndex = 2;
+            this.dtv_Lop.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_lop_CellClick);
             // 
             // DanhSachLop
             // 
@@ -317,21 +321,21 @@
         private System.Windows.Forms.Label lbl_GiaoVien;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btn_xoa;
+        private FontAwesome.Sharp.IconButton btn_sua;
+        private FontAwesome.Sharp.IconButton btn_them;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox gr_timkiem;
-        private System.Windows.Forms.ComboBox cbx_tenGiaovien;
+        private System.Windows.Forms.ComboBox cbx_tenLop;
         private System.Windows.Forms.Label lbl_tenNhanvien;
-        private System.Windows.Forms.ComboBox cbx_maGiaovien;
+        private System.Windows.Forms.ComboBox cbx_maLop;
         private System.Windows.Forms.Label lbl_maGiaovien;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dtv_Lop;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_quanSo;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_sdt;
+        private System.Windows.Forms.TextBox txt_lopTruong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }

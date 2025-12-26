@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QL_phong_lab.BLL
 {
@@ -50,6 +51,30 @@ namespace QL_phong_lab.BLL
                 sqlCommand = new SqlCommand(query, conn);
                 sqlCommand.ExecuteNonQuery();
                 DataProvider.CloseConnection();
+            }
+        }
+
+        public static void Load_CBX_lophoc(ComboBox cbx)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+                using (SqlCommand command = new SqlCommand("SELECT DISTINCT MaLop FROM LopHoc", conn))
+                {
+                    conn.Open();
+                    cbx.Items.Clear();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            cbx.Items.Add(reader["MaLop"].ToString());
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading class data: " + ex.Message);
             }
         }
 

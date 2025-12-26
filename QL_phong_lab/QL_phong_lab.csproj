@@ -62,12 +62,26 @@
     <Compile Include="BLL\MonHoc.cs" />
     <Compile Include="BLL\PhongThucHanh.cs" />
     <Compile Include="BLL\SuCo.cs" />
+    <Compile Include="BLL\TaiKhoan.cs" />
     <Compile Include="BLL\ThietBi.cs" />
     <Compile Include="BLL\ThietBiPhong.cs" />
+    <Compile Include="BLL\Thongtintaotk.cs" />
     <Compile Include="DAL\Connection.cs" />
     <Compile Include="DAL\DataProvider.cs" />
     <Compile Include="BLL\PhanQuyenTruyCap.cs" />
     <Compile Include="BLL\GiaoVien.cs" />
+    <Compile Include="GUI\Userrr\Admin\QuanLyGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\Admin\QuanLyGiaoVien.Designer.cs">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.Designer.cs">
+      <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Userrr\DashBoarddd\DanhSachLop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,12 +174,6 @@
     <Compile Include="GUI\Loginnn\QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.Designer.cs">
-      <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Userrr\NhanVien\ThongTinPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,12 +198,32 @@
     <Compile Include="GUI\Userrr\Admin\QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Userrr\Admin\QuanLyGiaoVien.cs">
-      <SubType>Form</SubType>
+    <Compile Include="QL_lichphongthuchanhDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_lichphongthuchanhDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Userrr\Admin\QuanLyGiaoVien.Designer.cs">
+    <Compile Include="QL_lichphongthuchanhDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_lichphongthuchanhDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_lichphongthuchanhDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_lichphongthuchanhDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_lichphongthuchanhDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_lichphongthuchanhDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Userrr\Admin\QuanLyGiaoVien.resx">
       <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
-    </Compile>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.resx">
+      <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\DashBoarddd\DanhSachBoMon.resx">
       <DependentUpon>DanhSachBoMon.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,9 +274,6 @@
     <EmbeddedResource Include="GUI\Userrr\Admin\DuyetLich_DanhSach.resx">
       <DependentUpon>DuyetLich_DanhSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\Admin\TaoTaiKhoanMoi.resx">
-      <DependentUpon>TaoTaiKhoanMoi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\NhanVien\ThongTinPhong.resx">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,9 +282,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Userrr\Admin\QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Userrr\Admin\QuanLyGiaoVien.resx">
-      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -276,6 +298,50 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QL_lichphongthuchanhDataSet.xsc">
+      <DependentUpon>QL_lichphongthuchanhDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_lichphongthuchanhDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet.xss">
+      <DependentUpon>QL_lichphongthuchanhDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet1.xsc">
+      <DependentUpon>QL_lichphongthuchanhDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_lichphongthuchanhDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet1.xss">
+      <DependentUpon>QL_lichphongthuchanhDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet2.xsc">
+      <DependentUpon>QL_lichphongthuchanhDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_lichphongthuchanhDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet2.xss">
+      <DependentUpon>QL_lichphongthuchanhDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet3.xsc">
+      <DependentUpon>QL_lichphongthuchanhDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_lichphongthuchanhDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_lichphongthuchanhDataSet3.xss">
+      <DependentUpon>QL_lichphongthuchanhDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Huy_Hiệu_Đoàn.png" />
   </ItemGroup>
   <ItemGroup>

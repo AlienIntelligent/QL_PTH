@@ -28,37 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_DS_duyet = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gr_timkiem = new System.Windows.Forms.GroupBox();
             this.cbx_phong = new System.Windows.Forms.ComboBox();
             this.lbl_phong = new System.Windows.Forms.Label();
+            this.cbx_maBDK = new System.Windows.Forms.ComboBox();
             this.lbl_tenNhanvien = new System.Windows.Forms.Label();
             this.cbx_Giaovien = new System.Windows.Forms.ComboBox();
             this.lbl_maGiaovien = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_duyet = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_hocky = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_namhoc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txt_ngayKT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_Bomon = new System.Windows.Forms.TextBox();
+            this.txt_thu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_duyet = new FontAwesome.Sharp.IconButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txt_ngayBD = new System.Windows.Forms.TextBox();
+            this.txt_mon = new System.Windows.Forms.TextBox();
+            this.txt_lop = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,7 +66,6 @@
             this.dtv_choduyet = new System.Windows.Forms.DataGridView();
             this.pnl_Title_duyet_DS = new System.Windows.Forms.Panel();
             this.lbl_DS_duyet = new System.Windows.Forms.Label();
-            this.cbx_maBDK = new System.Windows.Forms.ComboBox();
             this.pnl_DS_duyet.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gr_timkiem.SuspendLayout();
@@ -113,7 +111,7 @@
             this.gr_timkiem.ForeColor = System.Drawing.Color.MintCream;
             this.gr_timkiem.Location = new System.Drawing.Point(9, 6);
             this.gr_timkiem.Name = "gr_timkiem";
-            this.gr_timkiem.Size = new System.Drawing.Size(743, 89);
+            this.gr_timkiem.Size = new System.Drawing.Size(746, 89);
             this.gr_timkiem.TabIndex = 2;
             this.gr_timkiem.TabStop = false;
             this.gr_timkiem.Text = "Tìm Kiếm";
@@ -135,6 +133,14 @@
             this.lbl_phong.Size = new System.Drawing.Size(89, 22);
             this.lbl_phong.TabIndex = 9;
             this.lbl_phong.Text = "Phòng TH";
+            // 
+            // cbx_maBDK
+            // 
+            this.cbx_maBDK.FormattingEnabled = true;
+            this.cbx_maBDK.Location = new System.Drawing.Point(388, 46);
+            this.cbx_maBDK.Name = "cbx_maBDK";
+            this.cbx_maBDK.Size = new System.Drawing.Size(102, 35);
+            this.cbx_maBDK.TabIndex = 8;
             // 
             // lbl_tenNhanvien
             // 
@@ -176,22 +182,20 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.txt_duyet);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.txt_hocky);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txt_namhoc);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.txt_ngayKT);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txt_Bomon);
+            this.groupBox2.Controls.Add(this.txt_thu);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.btn_duyet);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.txt_ngayBD);
+            this.groupBox2.Controls.Add(this.txt_mon);
+            this.groupBox2.Controls.Add(this.txt_lop);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
@@ -205,86 +209,86 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin";
             // 
-            // textBox7
+            // txt_duyet
             // 
-            this.textBox7.Location = new System.Drawing.Point(286, 78);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(82, 35);
-            this.textBox7.TabIndex = 25;
+            this.txt_duyet.Location = new System.Drawing.Point(174, 392);
+            this.txt_duyet.Name = "txt_duyet";
+            this.txt_duyet.Size = new System.Drawing.Size(100, 35);
+            this.txt_duyet.TabIndex = 29;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(32, 399);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(136, 22);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Trạng thái duyệt";
+            // 
+            // txt_hocky
+            // 
+            this.txt_hocky.Location = new System.Drawing.Point(286, 61);
+            this.txt_hocky.Name = "txt_hocky";
+            this.txt_hocky.Size = new System.Drawing.Size(82, 35);
+            this.txt_hocky.TabIndex = 25;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(214, 85);
+            this.label8.Location = new System.Drawing.Point(214, 68);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 22);
             this.label8.TabIndex = 24;
             this.label8.Text = "Học kỳ";
             // 
-            // textBox8
+            // txt_namhoc
             // 
-            this.textBox8.Location = new System.Drawing.Point(99, 78);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 35);
-            this.textBox8.TabIndex = 23;
+            this.txt_namhoc.Location = new System.Drawing.Point(99, 61);
+            this.txt_namhoc.Name = "txt_namhoc";
+            this.txt_namhoc.Size = new System.Drawing.Size(100, 35);
+            this.txt_namhoc.TabIndex = 23;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(13, 85);
+            this.label9.Location = new System.Drawing.Point(13, 68);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 22);
             this.label9.TabIndex = 22;
             this.label9.Text = "Năm học";
             // 
-            // textBox6
+            // txt_ngayKT
             // 
-            this.textBox6.Location = new System.Drawing.Point(239, 409);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 35);
-            this.textBox6.TabIndex = 21;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(239, 339);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 35);
-            this.textBox5.TabIndex = 20;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(195, 416);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 22);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "đến";
+            this.txt_ngayKT.Location = new System.Drawing.Point(239, 322);
+            this.txt_ngayKT.Name = "txt_ngayKT";
+            this.txt_ngayKT.Size = new System.Drawing.Size(100, 35);
+            this.txt_ngayKT.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 346);
+            this.label1.Location = new System.Drawing.Point(195, 329);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 22);
             this.label1.TabIndex = 18;
             this.label1.Text = "đến";
             // 
-            // txt_Bomon
+            // txt_thu
             // 
-            this.txt_Bomon.Location = new System.Drawing.Point(218, 270);
-            this.txt_Bomon.Name = "txt_Bomon";
-            this.txt_Bomon.Size = new System.Drawing.Size(121, 35);
-            this.txt_Bomon.TabIndex = 17;
+            this.txt_thu.Location = new System.Drawing.Point(218, 253);
+            this.txt_thu.Name = "txt_thu";
+            this.txt_thu.Size = new System.Drawing.Size(121, 35);
+            this.txt_thu.TabIndex = 17;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 277);
+            this.label5.Location = new System.Drawing.Point(32, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 22);
             this.label5.TabIndex = 16;
@@ -305,50 +309,34 @@
             this.btn_duyet.TabIndex = 15;
             this.btn_duyet.Text = "Duyệt";
             this.btn_duyet.UseVisualStyleBackColor = false;
+            this.btn_duyet.Click += new System.EventHandler(this.btn_duyet_Click);
             // 
-            // textBox1
+            // txt_ngayBD
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 409);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 35);
-            this.textBox1.TabIndex = 14;
+            this.txt_ngayBD.Location = new System.Drawing.Point(89, 322);
+            this.txt_ngayBD.Name = "txt_ngayBD";
+            this.txt_ngayBD.Size = new System.Drawing.Size(100, 35);
+            this.txt_ngayBD.TabIndex = 13;
             // 
-            // textBox2
+            // txt_mon
             // 
-            this.textBox2.Location = new System.Drawing.Point(89, 339);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 35);
-            this.textBox2.TabIndex = 13;
+            this.txt_mon.Location = new System.Drawing.Point(218, 185);
+            this.txt_mon.Name = "txt_mon";
+            this.txt_mon.Size = new System.Drawing.Size(121, 35);
+            this.txt_mon.TabIndex = 12;
             // 
-            // textBox3
+            // txt_lop
             // 
-            this.textBox3.Location = new System.Drawing.Point(218, 202);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 35);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(218, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 35);
-            this.textBox4.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 416);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 22);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Tiết";
+            this.txt_lop.Location = new System.Drawing.Point(218, 121);
+            this.txt_lop.Name = "txt_lop";
+            this.txt_lop.Size = new System.Drawing.Size(121, 35);
+            this.txt_lop.TabIndex = 11;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 346);
+            this.label3.Location = new System.Drawing.Point(32, 329);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 22);
             this.label3.TabIndex = 9;
@@ -358,7 +346,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 209);
+            this.label4.Location = new System.Drawing.Point(32, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 22);
             this.label4.TabIndex = 8;
@@ -368,7 +356,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 145);
+            this.label6.Location = new System.Drawing.Point(32, 128);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 22);
             this.label6.TabIndex = 7;
@@ -388,6 +376,7 @@
             this.btn_boqua.TabIndex = 1;
             this.btn_boqua.Text = "Bỏ qua";
             this.btn_boqua.UseVisualStyleBackColor = false;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // pnl_data
             // 
@@ -400,49 +389,50 @@
             // 
             // dtv_choduyet
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Yellow;
-            this.dtv_choduyet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Yellow;
+            this.dtv_choduyet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dtv_choduyet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtv_choduyet.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_choduyet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_choduyet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dtv_choduyet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtv_choduyet.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtv_choduyet.DefaultCellStyle = dataGridViewCellStyle8;
             this.dtv_choduyet.Location = new System.Drawing.Point(3, 106);
             this.dtv_choduyet.Name = "dtv_choduyet";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_choduyet.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_choduyet.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtv_choduyet.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Yellow;
-            this.dtv_choduyet.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Yellow;
+            this.dtv_choduyet.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dtv_choduyet.RowTemplate.Height = 28;
             this.dtv_choduyet.Size = new System.Drawing.Size(752, 530);
             this.dtv_choduyet.TabIndex = 0;
+            this.dtv_choduyet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_choduyet_CellClick);
             // 
             // pnl_Title_duyet_DS
             // 
@@ -461,19 +451,11 @@
             this.lbl_DS_duyet.AutoSize = true;
             this.lbl_DS_duyet.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DS_duyet.ForeColor = System.Drawing.Color.GhostWhite;
-            this.lbl_DS_duyet.Location = new System.Drawing.Point(294, 7);
+            this.lbl_DS_duyet.Location = new System.Drawing.Point(165, 7);
             this.lbl_DS_duyet.Name = "lbl_DS_duyet";
-            this.lbl_DS_duyet.Size = new System.Drawing.Size(580, 36);
+            this.lbl_DS_duyet.Size = new System.Drawing.Size(838, 36);
             this.lbl_DS_duyet.TabIndex = 0;
-            this.lbl_DS_duyet.Text = "Danh Sách Chờ Duyệt Phòng Thực Hành";
-            // 
-            // cbx_maBDK
-            // 
-            this.cbx_maBDK.FormattingEnabled = true;
-            this.cbx_maBDK.Location = new System.Drawing.Point(388, 46);
-            this.cbx_maBDK.Name = "cbx_maBDK";
-            this.cbx_maBDK.Size = new System.Drawing.Size(102, 35);
-            this.cbx_maBDK.TabIndex = 8;
+            this.lbl_DS_duyet.Text = "Danh Sách Chờ Duyệt Đăng Ký Sử Dụng Phòng Thực Hành";
             // 
             // DuyetLich_DanhSach
             // 
@@ -515,27 +497,25 @@
         private System.Windows.Forms.Label lbl_maGiaovien;
         private System.Windows.Forms.Label lbl_phong;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txt_Bomon;
+        private System.Windows.Forms.TextBox txt_thu;
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton btn_duyet;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_ngayBD;
+        private System.Windows.Forms.TextBox txt_mon;
+        private System.Windows.Forms.TextBox txt_lop;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconButton btn_boqua;
         private System.Windows.Forms.ComboBox cbx_phong;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_hocky;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_namhoc;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_ngayKT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbx_maBDK;
+        private System.Windows.Forms.TextBox txt_duyet;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -92,7 +92,7 @@ namespace QL_phong_lab.BLL
                 }
             }
         }
-        public static void Load_XemLichPhong(DataGridView view, DateTime ngay, string maPhong, string ma_ten)
+        public static void Load_XemLichPhong(DataGridView view, DateTime? ngay, string maPhong, string ma_ten)
         {
             string procName = "sp_XemLichPhong";
             DataTable dt = new DataTable();
@@ -118,56 +118,6 @@ namespace QL_phong_lab.BLL
                 catch (SqlException ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    DataProvider.CloseConnection();
-                }
-            }
-        }
-
-        public static string KiemTraPhongTrongTiet(string maPhong, DateTime ngayBatDau, DateTime ngayKetThuc, int tietBatDau, int tietKetThuc, int thuTrongTuan)
-        {
-            string procName = "sp_kiemtraphongtrong_tiet";
-            DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
-            {
-                try
-                {
-                    DataProvider.OpenConnection();
-                    using (var command = new SqlCommand(procName, conn))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("@MaPhong", maPhong);
-                        command.Parameters.AddWithValue("@NgayBatDau", ngayBatDau);
-                        command.Parameters.AddWithValue("@NgayKetThuc", ngayKetThuc);
-                        command.Parameters.AddWithValue("@TietBatDau", tietBatDau);
-                        command.Parameters.AddWithValue("@TietKetThuc", tietKetThuc);
-                        command.Parameters.AddWithValue("@ThuTrongTuan", thuTrongTuan);
-
-                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-                        {
-                            adapter.Fill(dt);
-                        }
-                    }
-
-                    if (dt.Rows.Count == 0)
-                    {
-                        return "Phòng trống trong khoảng thời gian đã chọn.";
-                    }
-                    else
-                    {
-                        StringBuilder sb = new StringBuilder("Phòng đã có lịch vào các ngày: \n");
-                        foreach (DataRow row in dt.Rows)
-                        {
-                            sb.AppendLine(row["Ngay"].ToString());
-                        }
-                        return sb.ToString();
-                    }
-                }
-                catch (SqlException ex)
-                {
-                    return "Error: " + ex.Message;
                 }
                 finally
                 {

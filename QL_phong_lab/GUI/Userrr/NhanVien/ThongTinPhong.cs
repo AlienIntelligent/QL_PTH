@@ -29,5 +29,10 @@ namespace QL_phong_lab
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
         }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

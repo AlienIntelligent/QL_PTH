@@ -69,7 +69,7 @@ namespace QL_phong_lab
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            
+            txt_Matkhau.UseSystemPasswordChar = true;
         }
 
         private void txt_TenDangNhap_TextChanged(object sender, EventArgs e)

@@ -46,7 +46,7 @@ namespace QL_phong_lab.GUI.Userrr.NhanVien
             txt_thu.Text = dtv_chot.Rows[e.RowIndex].Cells["ThuTrongTuan"].Value?.ToString();
             txt_tietBD.Text = dtv_chot.Rows[e.RowIndex].Cells["TietBatDauMongMuon"].Value?.ToString();
             txt_tietKT.Text = dtv_chot.Rows[e.RowIndex].Cells["TietKetThucMongMuon"].Value?.ToString();
-            txt_trangthai.Text = dtv_chot.Rows[e.RowIndex].Cells["TrangThai"].Value?.ToString();
+            txt_trangthai.Text = dtv_chot.Rows[e.RowIndex].Cells["Chot"].Value?.ToString();
         }
 
         private bool isCheckSuccessful = false;
@@ -137,49 +137,7 @@ namespace QL_phong_lab.GUI.Userrr.NhanVien
 
         private void btn_duyet_Click(object sender, EventArgs e)
         {
-            if (isCheckSuccessful && !hasConflicts)
-            {
-                try
-                {
-                    string maDangKy = cbx_MaBDK.Text;
-                    string maPhong = cbx_phong.Text;
-                    DateTime ngayBatDau = DateTime.Parse(txt_ngayBD.Text);
-                    DateTime ngayKetThuc = DateTime.Parse(txt_ngayKT.Text);
-                    int tietBatDau = int.Parse(txt_tietBD.Text);
-                    int tietKetThuc = int.Parse(txt_tietKT.Text);
-                    int thuTrongTuan = int.Parse(txt_thu.Text);
-
-                    using (var connection = new SqlConnection(Connection.GetConnectionString()))
-                    {
-                        connection.Open();
-                        using (var command = new SqlCommand("sp_ThemLichSuDungPhong", connection))
-                        {
-                            command.CommandType = CommandType.StoredProcedure;
-
-                            command.Parameters.AddWithValue("@MaDangKy", maDangKy);
-                            command.Parameters.AddWithValue("@MaPhong", maPhong);
-                            command.Parameters.AddWithValue("@NgayBatDau", ngayBatDau);
-                            command.Parameters.AddWithValue("@NgayKetThuc", ngayKetThuc);
-                            command.Parameters.AddWithValue("@TietBatDau", tietBatDau);
-                            command.Parameters.AddWithValue("@TietKetThuc", tietKetThuc);
-                            command.Parameters.AddWithValue("@ThuTrongTuan", thuTrongTuan);
-                            command.Parameters.AddWithValue("@TrangThai", 1);
-
-                            command.ExecuteNonQuery();
-                        }
-                    }
-
-                    MessageBox.Show("Đã duyệt và thêm vào lịch sử sử dụng phòng.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng kiểm tra lại lịch trước khi duyệt.");
-            }
+            
         }
 
         private void btn_phanhoi_Click(object sender, EventArgs e)

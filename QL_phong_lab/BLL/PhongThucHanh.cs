@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QL_phong_lab.BLL
 {
@@ -26,17 +27,13 @@ namespace QL_phong_lab.BLL
         }
         public PhongThucHanh() { }
 
-        SqlDataAdapter dataAdapter;
-        SqlCommand sqlCommand;
         public DataTable TablePhong(string query)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+            using (SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn))
             {
-                DataProvider.OpenConnection();
-                dataAdapter = new SqlDataAdapter(query, conn);
                 dataAdapter.Fill(dt);
-                DataProvider.CloseConnection();
             }
             return dt;
         }
@@ -44,11 +41,35 @@ namespace QL_phong_lab.BLL
         public void Command(string query)
         {
             using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+            using (SqlCommand sqlCommand = new SqlCommand(query, conn))
             {
-                DataProvider.OpenConnection();
-                sqlCommand = new SqlCommand(query, conn);
+                conn.Open();
                 sqlCommand.ExecuteNonQuery();
-                DataProvider.CloseConnection();
+            }
+        }
+
+        public static void Load_CBX_phong(ComboBox cbx)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Connection.GetConnectionString()))
+                using (SqlCommand command = new SqlCommand("SELECT DISTINCT MaPhong FROM PhongThucHanh", conn))
+                {
+                    conn.Open();
+                    cbx.Items.Clear();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            cbx.Items.Add(reader["MaPhong"].ToString());
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách phòng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_BaoCaoSuCo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,11 +41,15 @@
             this.dtp_ngaysau = new System.Windows.Forms.DateTimePicker();
             this.dtp_ngaydau = new System.Windows.Forms.DateTimePicker();
             this.cbo_mon = new System.Windows.Forms.ComboBox();
+            this.monHocBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_lichphongthuchanhDataSet3 = new QL_phong_lab.QL_lichphongthuchanhDataSet3();
             this.cbo_lop = new System.Windows.Forms.ComboBox();
+            this.lopHocBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_lichphongthuchanhDataSet2 = new QL_phong_lab.QL_lichphongthuchanhDataSet2();
             this.txt_trangthai = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btn_them = new FontAwesome.Sharp.IconButton();
+            this.btn_sua = new FontAwesome.Sharp.IconButton();
             this.txt_hocky = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_namhoc = new System.Windows.Forms.TextBox();
@@ -54,26 +59,41 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_thu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_duyet = new FontAwesome.Sharp.IconButton();
             this.txt_tietdau = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_boqua = new FontAwesome.Sharp.IconButton();
+            this.btn_huy = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gr_timkiem = new System.Windows.Forms.GroupBox();
             this.cbo_phong = new System.Windows.Forms.ComboBox();
+            this.phongThucHanhBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_lichphongthuchanhDataSet1 = new QL_phong_lab.QL_lichphongthuchanhDataSet1();
             this.lbl_phong = new System.Windows.Forms.Label();
             this.cbo_maDK = new System.Windows.Forms.ComboBox();
+            this.banDangKyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_lichphongthuchanhDataSet = new QL_phong_lab.QL_lichphongthuchanhDataSet();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dtv_Bandangky = new System.Windows.Forms.DataGridView();
+            this.banDangKyTableAdapter = new QL_phong_lab.QL_lichphongthuchanhDataSetTableAdapters.BanDangKyTableAdapter();
+            this.phongThucHanhTableAdapter = new QL_phong_lab.QL_lichphongthuchanhDataSet1TableAdapters.PhongThucHanhTableAdapter();
+            this.lopHocTableAdapter = new QL_phong_lab.QL_lichphongthuchanhDataSet2TableAdapters.LopHocTableAdapter();
+            this.monHocTableAdapter = new QL_phong_lab.QL_lichphongthuchanhDataSet3TableAdapters.MonHocTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.monHocBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopHocBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet2)).BeginInit();
             this.panel3.SuspendLayout();
             this.gr_timkiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phongThucHanhBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.banDangKyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_Bandangky)).BeginInit();
             this.SuspendLayout();
@@ -118,8 +138,8 @@
             this.groupBox2.Controls.Add(this.cbo_lop);
             this.groupBox2.Controls.Add(this.txt_trangthai);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.iconButton2);
-            this.groupBox2.Controls.Add(this.iconButton1);
+            this.groupBox2.Controls.Add(this.btn_them);
+            this.groupBox2.Controls.Add(this.btn_sua);
             this.groupBox2.Controls.Add(this.txt_hocky);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txt_namhoc);
@@ -129,13 +149,12 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txt_thu);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.btn_duyet);
             this.groupBox2.Controls.Add(this.txt_tietdau);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.btn_boqua);
+            this.groupBox2.Controls.Add(this.btn_huy);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.MintCream;
             this.groupBox2.Location = new System.Drawing.Point(1, -1);
@@ -161,19 +180,41 @@
             // 
             // cbo_mon
             // 
+            this.cbo_mon.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.monHocBindingSource, "MaMonHoc", true));
             this.cbo_mon.FormattingEnabled = true;
             this.cbo_mon.Location = new System.Drawing.Point(221, 165);
             this.cbo_mon.Name = "cbo_mon";
             this.cbo_mon.Size = new System.Drawing.Size(121, 35);
             this.cbo_mon.TabIndex = 56;
             // 
+            // monHocBindingSource
+            // 
+            this.monHocBindingSource.DataMember = "MonHoc";
+            this.monHocBindingSource.DataSource = this.qL_lichphongthuchanhDataSet3;
+            // 
+            // qL_lichphongthuchanhDataSet3
+            // 
+            this.qL_lichphongthuchanhDataSet3.DataSetName = "QL_lichphongthuchanhDataSet3";
+            this.qL_lichphongthuchanhDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // cbo_lop
             // 
+            this.cbo_lop.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lopHocBindingSource, "MaLop", true));
             this.cbo_lop.FormattingEnabled = true;
             this.cbo_lop.Location = new System.Drawing.Point(221, 113);
             this.cbo_lop.Name = "cbo_lop";
             this.cbo_lop.Size = new System.Drawing.Size(121, 35);
             this.cbo_lop.TabIndex = 17;
+            // 
+            // lopHocBindingSource
+            // 
+            this.lopHocBindingSource.DataMember = "LopHoc";
+            this.lopHocBindingSource.DataSource = this.qL_lichphongthuchanhDataSet2;
+            // 
+            // qL_lichphongthuchanhDataSet2
+            // 
+            this.qL_lichphongthuchanhDataSet2.DataSetName = "QL_lichphongthuchanhDataSet2";
+            this.qL_lichphongthuchanhDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txt_trangthai
             // 
@@ -192,35 +233,37 @@
             this.label10.TabIndex = 54;
             this.label10.Text = "Trạng thái";
             // 
-            // iconButton2
+            // btn_them
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(50, 440);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(109, 48);
-            this.iconButton2.TabIndex = 53;
-            this.iconButton2.Text = "Thêm";
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.btn_them.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_them.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btn_them.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_them.IconColor = System.Drawing.Color.Black;
+            this.btn_them.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_them.Location = new System.Drawing.Point(50, 440);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(109, 48);
+            this.btn_them.TabIndex = 53;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // iconButton1
+            // btn_sua
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(233, 440);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(109, 48);
-            this.iconButton1.TabIndex = 52;
-            this.iconButton1.Text = "Sửa";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btn_sua.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sua.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btn_sua.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_sua.IconColor = System.Drawing.Color.Black;
+            this.btn_sua.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_sua.Location = new System.Drawing.Point(233, 440);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(109, 48);
+            this.btn_sua.TabIndex = 52;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // txt_hocky
             // 
@@ -300,22 +343,6 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Thứ trong tuần";
             // 
-            // btn_duyet
-            // 
-            this.btn_duyet.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_duyet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_duyet.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_duyet.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btn_duyet.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn_duyet.IconColor = System.Drawing.Color.Black;
-            this.btn_duyet.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_duyet.Location = new System.Drawing.Point(242, 520);
-            this.btn_duyet.Name = "btn_duyet";
-            this.btn_duyet.Size = new System.Drawing.Size(93, 48);
-            this.btn_duyet.TabIndex = 39;
-            this.btn_duyet.Text = "Gửi";
-            this.btn_duyet.UseVisualStyleBackColor = false;
-            // 
             // txt_tietdau
             // 
             this.txt_tietdau.Location = new System.Drawing.Point(92, 328);
@@ -363,21 +390,22 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Lớp";
             // 
-            // btn_boqua
+            // btn_huy
             // 
-            this.btn_boqua.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_boqua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_boqua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_boqua.ForeColor = System.Drawing.Color.Crimson;
-            this.btn_boqua.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn_boqua.IconColor = System.Drawing.Color.Black;
-            this.btn_boqua.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_boqua.Location = new System.Drawing.Point(59, 520);
-            this.btn_boqua.Name = "btn_boqua";
-            this.btn_boqua.Size = new System.Drawing.Size(92, 48);
-            this.btn_boqua.TabIndex = 30;
-            this.btn_boqua.Text = "Hủy";
-            this.btn_boqua.UseVisualStyleBackColor = false;
+            this.btn_huy.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_huy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_huy.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_huy.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_huy.IconColor = System.Drawing.Color.Black;
+            this.btn_huy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_huy.Location = new System.Drawing.Point(151, 511);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(92, 48);
+            this.btn_huy.TabIndex = 30;
+            this.btn_huy.Text = "Hủy";
+            this.btn_huy.UseVisualStyleBackColor = false;
+            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
             // 
             // panel3
             // 
@@ -407,11 +435,22 @@
             // 
             // cbo_phong
             // 
+            this.cbo_phong.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.phongThucHanhBindingSource, "MaPhong", true));
             this.cbo_phong.FormattingEnabled = true;
             this.cbo_phong.Location = new System.Drawing.Point(555, 44);
             this.cbo_phong.Name = "cbo_phong";
             this.cbo_phong.Size = new System.Drawing.Size(102, 35);
             this.cbo_phong.TabIndex = 16;
+            // 
+            // phongThucHanhBindingSource
+            // 
+            this.phongThucHanhBindingSource.DataMember = "PhongThucHanh";
+            this.phongThucHanhBindingSource.DataSource = this.qL_lichphongthuchanhDataSet1;
+            // 
+            // qL_lichphongthuchanhDataSet1
+            // 
+            this.qL_lichphongthuchanhDataSet1.DataSetName = "QL_lichphongthuchanhDataSet1";
+            this.qL_lichphongthuchanhDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lbl_phong
             // 
@@ -425,11 +464,22 @@
             // 
             // cbo_maDK
             // 
+            this.cbo_maDK.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.banDangKyBindingSource, "MaDangKy", true));
             this.cbo_maDK.FormattingEnabled = true;
             this.cbo_maDK.Location = new System.Drawing.Point(221, 44);
             this.cbo_maDK.Name = "cbo_maDK";
             this.cbo_maDK.Size = new System.Drawing.Size(102, 35);
             this.cbo_maDK.TabIndex = 14;
+            // 
+            // banDangKyBindingSource
+            // 
+            this.banDangKyBindingSource.DataMember = "BanDangKy";
+            this.banDangKyBindingSource.DataSource = this.qL_lichphongthuchanhDataSet;
+            // 
+            // qL_lichphongthuchanhDataSet
+            // 
+            this.qL_lichphongthuchanhDataSet.DataSetName = "QL_lichphongthuchanhDataSet";
+            this.qL_lichphongthuchanhDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label11
             // 
@@ -453,49 +503,65 @@
             // 
             // dtv_Bandangky
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.dtv_Bandangky.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.dtv_Bandangky.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dtv_Bandangky.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtv_Bandangky.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_Bandangky.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_Bandangky.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dtv_Bandangky.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtv_Bandangky.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtv_Bandangky.DefaultCellStyle = dataGridViewCellStyle8;
             this.dtv_Bandangky.Location = new System.Drawing.Point(3, 3);
             this.dtv_Bandangky.Name = "dtv_Bandangky";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_Bandangky.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_Bandangky.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtv_Bandangky.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.dtv_Bandangky.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.dtv_Bandangky.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dtv_Bandangky.RowTemplate.Height = 28;
             this.dtv_Bandangky.Size = new System.Drawing.Size(773, 525);
             this.dtv_Bandangky.TabIndex = 3;
             this.dtv_Bandangky.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_Bandangky_CellClick);
+            // 
+            // banDangKyTableAdapter
+            // 
+            this.banDangKyTableAdapter.ClearBeforeFill = true;
+            // 
+            // phongThucHanhTableAdapter
+            // 
+            this.phongThucHanhTableAdapter.ClearBeforeFill = true;
+            // 
+            // lopHocTableAdapter
+            // 
+            this.lopHocTableAdapter.ClearBeforeFill = true;
+            // 
+            // monHocTableAdapter
+            // 
+            this.monHocTableAdapter.ClearBeforeFill = true;
             // 
             // DatLich
             // 
@@ -515,9 +581,17 @@
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.monHocBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopHocBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.gr_timkiem.ResumeLayout(false);
             this.gr_timkiem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phongThucHanhBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.banDangKyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_lichphongthuchanhDataSet)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtv_Bandangky)).EndInit();
             this.ResumeLayout(false);
@@ -534,8 +608,8 @@
         private System.Windows.Forms.GroupBox gr_timkiem;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dtv_Bandangky;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btn_them;
+        private FontAwesome.Sharp.IconButton btn_sua;
         private System.Windows.Forms.TextBox txt_hocky;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_namhoc;
@@ -545,13 +619,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_thu;
         private System.Windows.Forms.Label label5;
-        private FontAwesome.Sharp.IconButton btn_duyet;
         private System.Windows.Forms.TextBox txt_tietdau;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private FontAwesome.Sharp.IconButton btn_boqua;
+        private FontAwesome.Sharp.IconButton btn_huy;
         private System.Windows.Forms.ComboBox cbo_phong;
         private System.Windows.Forms.Label lbl_phong;
         private System.Windows.Forms.ComboBox cbo_maDK;
@@ -562,5 +635,17 @@
         private System.Windows.Forms.ComboBox cbo_lop;
         private System.Windows.Forms.DateTimePicker dtp_ngaysau;
         private System.Windows.Forms.DateTimePicker dtp_ngaydau;
+        private QL_lichphongthuchanhDataSet qL_lichphongthuchanhDataSet;
+        private System.Windows.Forms.BindingSource banDangKyBindingSource;
+        private QL_lichphongthuchanhDataSetTableAdapters.BanDangKyTableAdapter banDangKyTableAdapter;
+        private QL_lichphongthuchanhDataSet1 qL_lichphongthuchanhDataSet1;
+        private System.Windows.Forms.BindingSource phongThucHanhBindingSource;
+        private QL_lichphongthuchanhDataSet1TableAdapters.PhongThucHanhTableAdapter phongThucHanhTableAdapter;
+        private QL_lichphongthuchanhDataSet2 qL_lichphongthuchanhDataSet2;
+        private System.Windows.Forms.BindingSource lopHocBindingSource;
+        private QL_lichphongthuchanhDataSet2TableAdapters.LopHocTableAdapter lopHocTableAdapter;
+        private QL_lichphongthuchanhDataSet3 qL_lichphongthuchanhDataSet3;
+        private System.Windows.Forms.BindingSource monHocBindingSource;
+        private QL_lichphongthuchanhDataSet3TableAdapters.MonHocTableAdapter monHocTableAdapter;
     }
 }
